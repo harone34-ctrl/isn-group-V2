@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router";
 import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
@@ -44,6 +45,11 @@ export function About() {
 
   return (
     <div>
+      <Helmet>
+        <title>À propos – Méthodologie Agile &amp; Expertise Terrain | ISN Group</title>
+        <meta name="description" content="Découvrez ISN Group : une approche Agile, Itérative et Incrémentale du support informatique. Technicien passionné au service de votre infrastructure et de vos projets numériques." />
+      </Helmet>
+
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-slate-950 via-slate-900 to-emerald-950 text-white py-20">
         <div className="container mx-auto px-4">
@@ -130,8 +136,63 @@ export function About() {
         </div>
       </section>
 
-      {/* Expertise Section */}
+      {/* Methodology Section */}
       <section className="py-20 bg-slate-900">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <Badge className="mb-4">Méthodologie</Badge>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+              Une approche Agile, Itérative et Incrémentale
+            </h2>
+            <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+              Chaque intervention suit une méthode éprouvée : avancer par cycles courts,
+              ajuster en continu, et apporter de la valeur concrète à chaque étape.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                pillar: "Agile",
+                number: "01",
+                description:
+                  "Priorité au besoin réel du client, adaptabilité face aux imprévus et communication directe à chaque étape. Pas de plan rigide qui ignore la réalité du terrain.",
+                detail:
+                  "Chaque intervention débute par une écoute active : je m'adapte à votre environnement, vos contraintes et vos priorités — pas l'inverse.",
+              },
+              {
+                pillar: "Itératif",
+                number: "02",
+                description:
+                  "On ne prétend pas tout résoudre d'un seul bloc. On progresse par cycles : chaque itération teste, valide et améliore la solution en place.",
+                detail:
+                  "En maintenance comme en création web, les retours de chaque cycle nourrissent le suivant. Le résultat final est plus robuste et mieux adapté.",
+              },
+              {
+                pillar: "Incrémental",
+                number: "03",
+                description:
+                  "La solution se construit couche par couche. Chaque incrément apporte une valeur concrète, même avant la livraison finale.",
+                detail:
+                  "Vous voyez les progrès à chaque étape, vous pouvez réorienter à tout moment, et vous ne payez que ce qui est effectivement livré.",
+              },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="bg-slate-800/50 rounded-xl p-8 border border-slate-700 hover:border-emerald-500/40 transition-all"
+              >
+                <div className="text-5xl font-bold text-emerald-500/20 mb-4">{item.number}</div>
+                <h3 className="text-2xl font-bold text-white mb-4">{item.pillar}</h3>
+                <p className="text-slate-300 mb-4">{item.description}</p>
+                <p className="text-slate-500 text-sm border-t border-slate-700 pt-4">{item.detail}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Expertise Section */}
+      <section className="py-20 bg-slate-950">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative order-2 md:order-1">

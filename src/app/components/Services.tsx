@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router";
 import { Button } from "./ui/button";
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
@@ -71,6 +72,11 @@ export function Services() {
 
   return (
     <div>
+      <Helmet>
+        <title>Nos Services – Maintenance, MSP &amp; Assemblage Haute Performance | ISN Group</title>
+        <meta name="description" content="Pôle support technique et conception web : maintenance préventive, infogérance MSP, assemblage et validation de configurations haute performance (MemTest86, Prime95, FurMark)." />
+      </Helmet>
+
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-slate-950 via-slate-900 to-emerald-950 text-white py-20">
         <div className="container mx-auto px-4">
@@ -140,8 +146,86 @@ export function Services() {
         </div>
       </section>
 
-      {/* Additional Services */}
+      {/* High Performance Hardware Section */}
       <section className="py-20 bg-slate-950">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-start">
+            <div>
+              <Badge className="mb-4 bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+                Haute Performance
+              </Badge>
+              <h2 className="text-3xl font-bold mb-4 text-white">
+                Assemblage &amp; Tests de Configurations Haute Performance
+              </h2>
+              <p className="text-xl text-slate-400 mb-6">
+                Conception sur mesure de postes de travail et de serveurs hautes performances,
+                validés par des protocoles de stress-test industriels avant livraison.
+              </p>
+              <p className="text-slate-300 mb-8">
+                Chaque machine assemblée est soumise à une batterie de tests rigoureux pour
+                garantir la stabilité à long terme. Aucune configuration ne quitte l'atelier
+                sans avoir passé le protocole complet.
+              </p>
+
+              <div className="space-y-4">
+                {[
+                  {
+                    name: "MemTest86",
+                    desc: "Test exhaustif de la mémoire RAM — détection des erreurs de bit, instabilités de timing et défauts de bus mémoire.",
+                  },
+                  {
+                    name: "Prime95",
+                    desc: "Stress-test CPU en précision étendue — valide la stabilité du processeur, du refroidissement et de l'alimentation sous charge maximale.",
+                  },
+                  {
+                    name: "FurMark",
+                    desc: "Burn-in GPU en conditions extrêmes — contrôle de la dissipation thermique, des artefacts visuels et de la stabilité du driver graphique.",
+                  },
+                ].map((proto, idx) => (
+                  <div
+                    key={idx}
+                    className="flex items-start gap-4 p-4 bg-slate-800/50 rounded-lg border border-slate-700 hover:border-emerald-500/40 transition-all"
+                  >
+                    <div className="w-2 h-2 bg-emerald-400 rounded-full mt-2 flex-shrink-0" />
+                    <div>
+                      <span className="font-mono font-bold text-emerald-400">{proto.name}</span>
+                      <p className="text-slate-400 text-sm mt-1">{proto.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="bg-slate-800/30 rounded-xl p-8 border border-slate-700">
+              <h3 className="text-xl font-bold text-white mb-6">
+                Protocole de validation avant livraison
+              </h3>
+              <div className="space-y-3">
+                {[
+                  "Montage et câblage soigné (gestion des flux d'air)",
+                  "Configuration BIOS & activation XMP / EXPO",
+                  "Installation et mise à jour complète du système",
+                  "MemTest86 — 2 passes minimum sans erreur",
+                  "Prime95 — 30 min Blend Test (CPU + RAM)",
+                  "FurMark — 15 min burn-in GPU",
+                  "Monitoring thermique sous charge (HWiNFO64)",
+                  "Rapport de test remis avec la machine",
+                ].map((step, idx) => (
+                  <div key={idx} className="flex items-center gap-3">
+                    <div className="w-6 h-6 rounded-full bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center flex-shrink-0">
+                      <span className="text-emerald-400 text-xs font-bold">{idx + 1}</span>
+                    </div>
+                    <span className="text-slate-300 text-sm">{step}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Additional Services */}
+      <section className="py-20 bg-slate-900">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge className="mb-4">Interventions Ponctuelles</Badge>

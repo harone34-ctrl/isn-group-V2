@@ -37,7 +37,7 @@ export function Root() {
           </div>
 
           {/* Main navigation */}
-          <nav className="flex items-center justify-between py-4">
+          <nav aria-label="Navigation principale" className="flex items-center justify-between py-4">
             <Link to="/" className="flex items-center gap-2">
               <div className="w-10 h-10 bg-emerald-500 rounded-lg flex items-center justify-center">
                 <span className="text-slate-950 font-bold text-sm">ISN</span>
@@ -79,7 +79,7 @@ export function Root() {
 
           {/* Mobile Navigation */}
           {mobileMenuOpen && (
-            <div className="md:hidden py-4 border-t border-slate-800">
+            <nav aria-label="Navigation mobile" className="md:hidden py-4 border-t border-slate-800">
               <div className="flex flex-col gap-4">
                 {navigation.map((item) => (
                   <Link
@@ -99,7 +99,7 @@ export function Root() {
                   <Button className="w-full">Demander un devis</Button>
                 </Link>
               </div>
-            </div>
+            </nav>
           )}
         </div>
       </header>
@@ -110,7 +110,7 @@ export function Root() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-black text-slate-400">
+      <footer aria-label="Pied de page" className="bg-black text-slate-400">
         <div className="container mx-auto px-4 py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>

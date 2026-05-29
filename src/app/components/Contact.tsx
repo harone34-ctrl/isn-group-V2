@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { useState } from "react";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
@@ -80,6 +81,11 @@ export function Contact() {
 
   return (
     <div>
+      <Helmet>
+        <title>Contact &amp; Devis Gratuit – ISN Group</title>
+        <meta name="description" content="Contactez ISN Group pour un devis gratuit et sans engagement. Support informatique, infogérance MSP, maintenance d'infrastructure. Réponse sous 24h ouvrées." />
+      </Helmet>
+
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-slate-950 via-slate-900 to-emerald-950 text-white py-20">
         <div className="container mx-auto px-4">

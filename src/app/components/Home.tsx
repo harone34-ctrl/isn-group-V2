@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router";
 import { Button } from "./ui/button";
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
@@ -62,6 +63,11 @@ export function Home() {
 
   return (
     <div>
+      <Helmet>
+        <title>ISN Group – Support Informatique, Infogérance MSP &amp; Architecture Matérielle</title>
+        <meta name="description" content="Innovative Systems &amp; Networks – Support informatique, infogérance MSP, architecture matérielle haute performance et maintenance d'infrastructure pour entreprises et professionnels." />
+      </Helmet>
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-950 via-slate-900 to-emerald-950 text-white">
         <div className="absolute inset-0 overflow-hidden opacity-5">

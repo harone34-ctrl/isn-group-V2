@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" role="img" aria-label="ISN Group">
+  <rect width="40" height="40" rx="8" fill="#10b981"/>
+  <text
+    x="20" y="26"
+    font-family="Arial, sans-serif"
+    font-weight="bold"
+    font-size="14"
+    fill="#030712"
+    text-anchor="middle"
+  >ISN</text>
+</svg>
