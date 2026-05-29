@@ -12,6 +12,10 @@ import {
   LayoutTemplate,
   CheckCircle,
   ArrowRight,
+  AlertTriangle,
+  Thermometer,
+  HardDrive,
+  Activity,
 } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
@@ -220,6 +224,132 @@ export function Services() {
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Éco-efficience & Maintenance Préventive */}
+      <section className="py-20 bg-gradient-to-br from-slate-900 via-slate-900 to-emerald-950/20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <Badge className="mb-4 bg-amber-500/20 text-amber-400 border border-amber-500/30">
+              Éco-efficience &amp; Maintenance Préventive
+            </Badge>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+              Maîtrise des coûts &amp; Survie de votre matériel face à la crise des composants
+            </h2>
+            <p className="text-slate-400 text-lg">
+              Quand racheter du matériel devient hors de prix, prolonger la durée de vie de l'existant
+              n'est plus une option — c'est une stratégie.
+            </p>
+          </div>
+
+          {/* Constat économique */}
+          <div className="max-w-4xl mx-auto mb-14 p-6 bg-amber-950/25 border border-amber-500/25 rounded-xl">
+            <div className="flex items-start gap-4">
+              <AlertTriangle className="h-6 w-6 text-amber-400 flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="font-bold text-amber-400 mb-2">Contexte économique 2024–2026</h3>
+                <p className="text-slate-300 leading-relaxed">
+                  Samsung, SK Hynix et Micron ont massivement réorienté leurs chaînes de production
+                  vers la mémoire HBM destinée aux puces IA (H100, MI300X…). Cette rareté artificielle
+                  sur le marché grand public et professionnel a fait flamber les prix des{" "}
+                  <span className="text-white font-medium">DDR5 de 40 à 60 %</span> et des{" "}
+                  <span className="text-white font-medium">SSD NVMe de 50 à 80 %</span> en deux ans.
+                  Renouveler un parc informatique au prix actuel n'est tout simplement plus viable pour
+                  la majorité des PME.{" "}
+                  <strong className="text-amber-300">
+                    Votre matériel existant est un capital — ISN Group vous aide à le défendre.
+                  </strong>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Trois solutions de terrain */}
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {/* Thermique */}
+            <div className="p-6 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-emerald-500/40 transition-all flex flex-col">
+              <div className="w-12 h-12 bg-emerald-500/10 rounded-lg flex items-center justify-center mb-4">
+                <Thermometer className="h-6 w-6 text-emerald-400" />
+              </div>
+              <h3 className="font-bold text-white text-lg mb-2">Optimisation thermique chirurgicale</h3>
+              <p className="text-slate-400 text-sm mb-4 leading-relaxed">
+                Un composant qui dépasse régulièrement 90 °C vieillit 3× plus vite. La chaleur est
+                le principal accélérateur de dégradation des semi-conducteurs.
+              </p>
+              <ul className="space-y-2.5 mt-auto">
+                {[
+                  "Remplacement de pâte thermique haute performance",
+                  "Nettoyage des radiateurs et optimisation des flux d'air",
+                  "Profils de ventilation calibrés sous charge réelle (HWiNFO64)",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm text-slate-300">
+                    <CheckCircle className="h-4 w-4 text-emerald-400 flex-shrink-0 mt-0.5" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* SSD */}
+            <div className="p-6 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-emerald-500/40 transition-all flex flex-col">
+              <div className="w-12 h-12 bg-emerald-500/10 rounded-lg flex items-center justify-center mb-4">
+                <HardDrive className="h-6 w-6 text-emerald-400" />
+              </div>
+              <h3 className="font-bold text-white text-lg mb-2">Prolongation de la durée de vie des SSD</h3>
+              <p className="text-slate-400 text-sm mb-4 leading-relaxed">
+                Avec les SSD NVMe à des prix historiquement hauts, chaque TBW (Terabytes Written) compte.
+                Nous configurons votre système pour minimiser l'usure inutile.
+              </p>
+              <ul className="space-y-2.5 mt-auto">
+                {[
+                  "Activation et vérification du TRIM",
+                  "Réduction des cycles d'écriture inutiles (swap, logs, fichiers temporaires)",
+                  "Monitoring S.M.A.R.T. — anticiper la défaillance avant toute perte de données",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm text-slate-300">
+                    <CheckCircle className="h-4 w-4 text-emerald-400 flex-shrink-0 mt-0.5" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Audit stabilité */}
+            <div className="p-6 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-emerald-500/40 transition-all flex flex-col">
+              <div className="w-12 h-12 bg-emerald-500/10 rounded-lg flex items-center justify-center mb-4">
+                <Activity className="h-6 w-6 text-emerald-400" />
+              </div>
+              <h3 className="font-bold text-white text-lg mb-2">Audit de stabilité électrique &amp; matériel</h3>
+              <p className="text-slate-400 text-sm mb-4 leading-relaxed">
+                Nos protocoles industriels identifient les composants en fin de vie avant qu'ils ne
+                provoquent une panne catastrophique — et la facture de remplacement qui va avec.
+              </p>
+              <ul className="space-y-2.5 mt-auto">
+                {[
+                  { tool: "MemTest86", desc: "Détection des erreurs RAM avant corruption de données" },
+                  { tool: "Prime95", desc: "Validation de la stabilité CPU + alimentation sous charge max" },
+                  { tool: "FurMark", desc: "Burn-in GPU — anticiper les défaillances graphiques" },
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm text-slate-300">
+                    <span className="font-mono text-xs text-emerald-400 bg-emerald-500/10 px-1.5 py-0.5 rounded flex-shrink-0 mt-0.5">
+                      {item.tool}
+                    </span>
+                    <span>{item.desc}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <Link to="/contact">
+              <Button>
+                Protéger mon parc informatique
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
