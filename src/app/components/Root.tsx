@@ -114,12 +114,12 @@ export function Root() {
         <div className="container mx-auto px-4 py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <div className="flex items-center gap-2 mb-4">
+              <Link to="/" className="flex items-center gap-2 mb-4 w-fit">
                 <div className="w-10 h-10 bg-emerald-500 rounded-lg flex items-center justify-center">
                   <span className="text-slate-950 font-bold text-sm">ISN</span>
                 </div>
                 <div className="font-bold text-white text-xl">ISN Group</div>
-              </div>
+              </Link>
               <p className="text-sm">
                 Votre technicien informatique de confiance – support de terrain et conception web.
               </p>
@@ -140,16 +140,22 @@ export function Root() {
               <ul className="space-y-2 text-sm">
                 <li><Link to="/about" className="hover:text-white transition-colors">À propos</Link></li>
                 <li><Link to="/contact" className="hover:text-white transition-colors">Contact</Link></li>
-                <li><a href="#" className="hover:text-white transition-colors">Mentions légales</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Politique de confidentialité</a></li>
+                <li><Link to="/legal" className="hover:text-white transition-colors">Mentions légales</Link></li>
+                <li><Link to="/legal" className="hover:text-white transition-colors">Politique de confidentialité</Link></li>
               </ul>
             </div>
 
             <div>
               <h3 className="font-semibold text-white mb-4">Contact</h3>
               <ul className="space-y-2 text-sm">
-                <li className="flex items-center gap-2"><Phone className="h-4 w-4" />07 67 80 42 47</li>
-                <li className="flex items-center gap-2"><Mail className="h-4 w-4" />contact@isngroup.fr</li>
+                <li className="flex items-center gap-2">
+                  <Phone className="h-4 w-4" />
+                  <a href="tel:0767804247" className="hover:text-white transition-colors">07 67 80 42 47</a>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Mail className="h-4 w-4" />
+                  <a href="mailto:contact@isngroup.fr" className="hover:text-white transition-colors">contact@isngroup.fr</a>
+                </li>
                 <li>Du lundi au vendredi</li>
                 <li>9h - 18h</li>
               </ul>
