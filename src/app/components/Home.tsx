@@ -63,8 +63,8 @@ export function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 to-blue-800 text-white">
-        <div className="absolute inset-0 overflow-hidden opacity-10">
+      <section className="relative bg-gradient-to-br from-slate-950 via-slate-900 to-emerald-950 text-white">
+        <div className="absolute inset-0 overflow-hidden opacity-5">
           <ImageWithFallback
             src="https://images.unsplash.com/photo-1551434678-e076c223a692?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJVCUyMHN1cHBvcnQlMjBwcm9mZXNzaW9uYWwlMjBvZmZpY2V8ZW58MXx8fHwxNzgwMDI5ODIxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
             alt="IT Support"
@@ -74,24 +74,24 @@ export function Home() {
 
         <div className="container mx-auto px-4 py-20 md:py-32 relative">
           <div className="max-w-3xl">
-            <Badge className="mb-4 bg-white/20 text-white border-white/30">
+            <Badge className="mb-4 bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
               Support Informatique & Conception Web
             </Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
               Un technicien de terrain à votre service
             </h1>
-            <p className="text-xl mb-8 text-blue-100">
+            <p className="text-xl mb-8 text-slate-300">
               ISN Group vous accompagne au quotidien : dépannage, maintenance, gestion de parc
               informatique et création de sites web professionnels — avec fiabilité et transparence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/contact">
-                <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
+                <Button size="lg" className="bg-emerald-500 text-slate-950 hover:bg-emerald-400 font-semibold">
                   Demander un devis gratuit
                 </Button>
               </Link>
               <Link to="/services">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+                <Button size="lg" variant="outline" className="border-emerald-500/50 text-emerald-400 hover:bg-emerald-500/10">
                   Découvrir nos services
                 </Button>
               </Link>
@@ -101,14 +101,14 @@ export function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-slate-950">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge className="mb-4">Nos Services</Badge>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
               Deux pôles d'expertise complémentaires
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-slate-400 max-w-2xl mx-auto">
               Du support informatique de terrain à la création web sur mesure — ISN Group couvre
               l'essentiel de vos besoins numériques.
             </p>
@@ -118,10 +118,10 @@ export function Home() {
             {services.map((service, index) => {
               const Icon = service.icon;
               return (
-                <Card key={index} className="hover:shadow-lg transition-shadow">
+                <Card key={index} className="hover:border-emerald-500/40 transition-all hover:shadow-emerald-500/5 hover:shadow-lg">
                   <CardHeader>
-                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                      <Icon className="h-6 w-6 text-blue-600" />
+                    <div className="w-12 h-12 bg-emerald-500/10 rounded-lg flex items-center justify-center mb-4">
+                      <Icon className="h-6 w-6 text-emerald-400" />
                     </div>
                     <CardTitle>{service.title}</CardTitle>
                     <CardDescription>{service.description}</CardDescription>
@@ -140,15 +140,15 @@ export function Home() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-slate-900">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <Badge className="mb-4">Pourquoi choisir ISN Group</Badge>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
                 Un partenaire fiable, proche et transparent
               </h2>
-              <p className="text-gray-600 mb-8">
+              <p className="text-slate-400 mb-8">
                 ISN Group, c'est un technicien informatique passionné avec une solide expérience de
                 terrain. Pas de promesses creuses, pas de jargon inutile — seulement des solutions
                 concrètes et un suivi honnête.
@@ -159,12 +159,12 @@ export function Home() {
                   const Icon = benefit.icon;
                   return (
                     <div key={index} className="flex gap-4">
-                      <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Icon className="h-6 w-6 text-blue-600" />
+                      <div className="w-12 h-12 bg-emerald-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Icon className="h-6 w-6 text-emerald-400" />
                       </div>
                       <div>
-                        <h3 className="font-semibold mb-2">{benefit.title}</h3>
-                        <p className="text-gray-600">{benefit.description}</p>
+                        <h3 className="font-semibold mb-2 text-white">{benefit.title}</h3>
+                        <p className="text-slate-400">{benefit.description}</p>
                       </div>
                     </div>
                   );
@@ -182,7 +182,7 @@ export function Home() {
               <ImageWithFallback
                 src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHRlYW0lMjBtZWV0aW5nfGVufDF8fHx8MTc3OTkyNzc2OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                 alt="Technicien informatique au travail"
-                className="rounded-lg shadow-xl w-full h-auto"
+                className="rounded-lg shadow-xl w-full h-auto opacity-80"
               />
             </div>
           </div>
@@ -190,42 +190,26 @@ export function Home() {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-slate-950">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge className="mb-4">Notre Approche</Badge>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
               Simple, clair et efficace
             </h2>
           </div>
 
           <div className="grid md:grid-cols-4 gap-8">
             {[
-              {
-                step: "01",
-                title: "Écoute",
-                description: "Prise en compte de votre situation et de vos besoins réels",
-              },
-              {
-                step: "02",
-                title: "Diagnostic",
-                description: "Analyse précise du problème ou du projet, sans surcoût caché",
-              },
-              {
-                step: "03",
-                title: "Intervention",
-                description: "Mise en œuvre rapide, sur site ou à distance selon le contexte",
-              },
-              {
-                step: "04",
-                title: "Suivi",
-                description: "Vérification du résultat et accompagnement dans la durée",
-              },
+              { step: "01", title: "Écoute", description: "Prise en compte de votre situation et de vos besoins réels" },
+              { step: "02", title: "Diagnostic", description: "Analyse précise du problème ou du projet, sans surcoût caché" },
+              { step: "03", title: "Intervention", description: "Mise en œuvre rapide, sur site ou à distance selon le contexte" },
+              { step: "04", title: "Suivi", description: "Vérification du résultat et accompagnement dans la durée" },
             ].map((item, index) => (
               <div key={index} className="text-center">
-                <div className="text-5xl font-bold text-blue-600/20 mb-4">{item.step}</div>
-                <h3 className="font-semibold text-xl mb-2">{item.title}</h3>
-                <p className="text-gray-600">{item.description}</p>
+                <div className="text-5xl font-bold text-emerald-500/20 mb-4">{item.step}</div>
+                <h3 className="font-semibold text-xl mb-2 text-white">{item.title}</h3>
+                <p className="text-slate-400">{item.description}</p>
               </div>
             ))}
           </div>
@@ -233,22 +217,22 @@ export function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-blue-600 text-white">
+      <section className="py-20 bg-emerald-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Un problème informatique ? Un projet web ?
           </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-emerald-100 mb-8 max-w-2xl mx-auto">
             Contactez ISN Group pour un devis gratuit et sans engagement. Réponse rapide garantie.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">
-              <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
+              <Button size="lg" className="bg-slate-950 text-emerald-400 hover:bg-slate-900">
                 Demander un devis gratuit
               </Button>
             </Link>
             <a href="tel:+33767804247">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+              <Button size="lg" variant="outline" className="border-emerald-200/50 text-white hover:bg-emerald-700">
                 Appelez-nous directement
               </Button>
             </a>
