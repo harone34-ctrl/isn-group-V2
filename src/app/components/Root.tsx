@@ -2,6 +2,7 @@ import { Outlet, Link, useLocation } from "react-router";
 import { Button } from "./ui/button";
 import { Menu, X, Phone, Mail } from "lucide-react";
 import { useState } from "react";
+import { ScrollToTop } from "./ScrollToTop";
 
 export function Root() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -21,6 +22,7 @@ export function Root() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <ScrollToTop />
       {/* Header */}
       <header className="sticky top-0 z-50 bg-slate-950 border-b border-slate-800">
         <div className="container mx-auto px-4">
