@@ -84,7 +84,7 @@ export function Services() {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-neutral-950 via-neutral-900 to-red-950 text-white py-20">
+      <section className="bg-black text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
             <Badge className="mb-4 bg-red-500/20 text-red-500 border border-red-500/30">
@@ -154,7 +154,7 @@ export function Services() {
       </section>
 
       {/* High Performance Hardware Section */}
-      <section className="py-20 bg-neutral-950">
+      <section className="py-20 bg-black">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div>
@@ -191,7 +191,7 @@ export function Services() {
                 ].map((proto, idx) => (
                   <div
                     key={idx}
-                    className="flex items-start gap-4 p-4 bg-neutral-800/50 rounded-lg border border-neutral-700 hover:border-red-500/40 transition-all"
+                    className="flex items-start gap-4 p-4 bg-neutral-900/80 rounded-lg border border-neutral-800 hover:border-red-500/40 transition-all"
                   >
                     <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0" />
                     <div>
@@ -203,7 +203,7 @@ export function Services() {
               </div>
             </div>
 
-            <div className="bg-neutral-800/30 rounded-xl p-8 border border-neutral-700">
+            <div className="bg-neutral-900/50 rounded-xl p-8 border border-neutral-800">
               <h3 className="text-xl font-bold text-white mb-6">
                 Protocole de validation avant livraison
               </h3>
@@ -272,7 +272,7 @@ export function Services() {
           {/* Trois solutions de terrain */}
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {/* Thermique */}
-            <div className="p-6 bg-neutral-800/50 rounded-xl border border-neutral-700 hover:border-red-500/40 transition-all flex flex-col">
+            <div className="p-6 bg-neutral-900/80 rounded-xl border border-neutral-800 hover:border-red-500/40 transition-all flex flex-col">
               <div className="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center mb-4">
                 <Thermometer className="h-6 w-6 text-red-500" />
               </div>
@@ -296,7 +296,7 @@ export function Services() {
             </div>
 
             {/* SSD */}
-            <div className="p-6 bg-neutral-800/50 rounded-xl border border-neutral-700 hover:border-red-500/40 transition-all flex flex-col">
+            <div className="p-6 bg-neutral-900/80 rounded-xl border border-neutral-800 hover:border-red-500/40 transition-all flex flex-col">
               <div className="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center mb-4">
                 <HardDrive className="h-6 w-6 text-red-500" />
               </div>
@@ -320,7 +320,7 @@ export function Services() {
             </div>
 
             {/* Audit stabilité */}
-            <div className="p-6 bg-neutral-800/50 rounded-xl border border-neutral-700 hover:border-red-500/40 transition-all flex flex-col">
+            <div className="p-6 bg-neutral-900/80 rounded-xl border border-neutral-800 hover:border-red-500/40 transition-all flex flex-col">
               <div className="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center mb-4">
                 <Activity className="h-6 w-6 text-red-500" />
               </div>
@@ -391,7 +391,7 @@ export function Services() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-neutral-950 text-white border-t border-neutral-800">
+      <section className="py-20 bg-black text-white border-t border-neutral-800">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
             Votre besoin ne rentre pas dans une case ?

@@ -2,7 +2,7 @@
 
 export function Legal() {
   return (
-    <div className="min-h-screen bg-neutral-950 text-neutral-400">
+    <div className="min-h-screen bg-black text-neutral-400">
       <Helmet>
         <title>Mentions légales &amp; Confidentialité | ISN Group</title>
         <meta name="description" content="Mentions légales, politique de confidentialité et informations sur l'hébergement du site ISN Group." />

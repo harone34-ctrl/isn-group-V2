@@ -24,7 +24,7 @@ export function Root() {
     <div className="min-h-screen flex flex-col">
       <ScrollToTop />
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-neutral-950 border-b border-neutral-800">
+      <header className="sticky top-0 z-50 bg-black border-b border-neutral-800">
         <div className="container mx-auto px-4">
           {/* Top bar */}
           <div className="hidden md:flex items-center justify-end gap-4 py-2 text-sm text-neutral-400 border-b border-neutral-800">
@@ -46,7 +46,7 @@ export function Root() {
               </div>
               <div>
                 <div className="font-bold text-xl text-white">ISN Group</div>
-                <div className="text-xs text-neutral-500">Support & Conception Web</div>
+                <div className="text-xs text-neutral-400">Support & Conception Web</div>
               </div>
             </Link>
 

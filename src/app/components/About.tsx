@@ -53,7 +53,7 @@ export function About() {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-neutral-950 via-neutral-900 to-red-950 text-white py-20">
+      <section className="bg-black text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
             <Badge className="mb-4 bg-red-500/20 text-red-500 border border-red-500/30">
@@ -111,7 +111,7 @@ export function About() {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 bg-neutral-950">
+      <section className="py-20 bg-black">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge className="mb-4">Nos Valeurs</Badge>
@@ -182,12 +182,12 @@ export function About() {
             ].map((item, index) => (
               <div
                 key={index}
-                className="bg-neutral-800/50 rounded-xl p-8 border border-neutral-700 hover:border-red-500/40 transition-all"
+                className="bg-neutral-900/80 rounded-xl p-8 border border-neutral-800 hover:border-red-500/40 transition-all"
               >
                 <div className="text-5xl font-bold text-red-500/20 mb-4">{item.number}</div>
                 <h3 className="text-2xl font-bold text-white mb-4">{item.pillar}</h3>
                 <p className="text-neutral-400 mb-4">{item.description}</p>
-                <p className="text-neutral-500 text-sm border-t border-neutral-700 pt-4">{item.detail}</p>
+                <p className="text-neutral-400 text-sm border-t border-neutral-800 pt-4">{item.detail}</p>
               </div>
             ))}
           </div>
@@ -195,7 +195,7 @@ export function About() {
       </section>
 
       {/* Expertise Section */}
-      <section className="py-20 bg-neutral-950">
+      <section className="py-20 bg-black">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative order-2 md:order-1">
@@ -231,7 +231,7 @@ export function About() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-neutral-950 text-white border-t border-neutral-800">
+      <section className="py-20 bg-black text-white border-t border-neutral-800">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
             Parlons de votre projet
@@ -247,7 +247,7 @@ export function About() {
               </Button>
             </Link>
             <Link to="/services">
-              <Button size="lg" variant="outline" className="border-neutral-600 text-white hover:bg-neutral-800">
+              <Button size="lg" variant="outline" className="border-neutral-600 text-white hover:bg-neutral-900">
                 Voir nos services
               </Button>
             </Link>

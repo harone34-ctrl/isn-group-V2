@@ -89,7 +89,7 @@ export function Contact() {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-neutral-950 via-neutral-900 to-red-950 text-white py-20">
+      <section className="bg-black text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
             <Badge className="mb-4 bg-red-500/20 text-red-500 border border-red-500/30">
@@ -149,7 +149,7 @@ export function Contact() {
                 })}
               </div>
 
-              <Card className="border-red-900 bg-red-950/40">
+              <Card className="border-red-800 bg-red-950/40">
                 <CardHeader>
                   <CardTitle className="text-lg text-white">Ce que vous obtenez</CardTitle>
                 </CardHeader>
@@ -228,7 +228,7 @@ export function Contact() {
                     <div className="space-y-2">
                       <Label htmlFor="company">
                         Entreprise / Organisation{" "}
-                        <span className="text-neutral-500 font-normal">(facultatif)</span>
+                        <span className="text-neutral-400 font-normal">(facultatif)</span>
                       </Label>
                       <Input
                         id="company"
@@ -292,7 +292,7 @@ export function Contact() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-neutral-950">
+      <section className="py-20 bg-black">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge className="mb-4">FAQ</Badge>

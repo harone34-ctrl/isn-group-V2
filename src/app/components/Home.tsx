@@ -71,7 +71,7 @@ export function Home() {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-neutral-950 via-neutral-900 to-red-950 text-white">
+      <section className="relative bg-black text-white">
         <div className="absolute inset-0 overflow-hidden">
           <ImageWithFallback
             src="/Serveur-informatique-1.png"
@@ -79,7 +79,7 @@ export function Home() {
             className="w-full h-full object-cover"
             fetchPriority="high"
           />
-          <div className="absolute inset-0 bg-neutral-950/50" />
+          <div className="absolute inset-0 bg-black/65" />
         </div>
 
         <div className="container mx-auto px-4 py-20 md:py-32 relative">
@@ -96,7 +96,7 @@ export function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/contact">
-                <Button size="lg" className="bg-red-500 text-neutral-950 hover:bg-red-600 font-semibold">
+                <Button size="lg" className="bg-red-600 text-white hover:bg-red-700 font-semibold">
                   Demander un devis gratuit
                 </Button>
               </Link>
@@ -111,7 +111,7 @@ export function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 bg-neutral-950">
+      <section className="py-20 bg-black">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge className="mb-4">Nos Services</Badge>
@@ -201,7 +201,7 @@ export function Home() {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-neutral-950">
+      <section className="py-20 bg-black">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge className="mb-4">Notre Approche</Badge>
@@ -228,7 +228,7 @@ export function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-neutral-950 text-white border-t border-neutral-800">
+      <section className="py-20 bg-black text-white border-t border-neutral-800">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
             Un problème informatique ? Un projet web ?
@@ -243,7 +243,7 @@ export function Home() {
               </Button>
             </Link>
             <a href="tel:+33767804247">
-              <Button size="lg" variant="outline" className="border-neutral-600 text-white hover:bg-neutral-800">
+              <Button size="lg" variant="outline" className="border-neutral-600 text-white hover:bg-neutral-900">
                 Appelez-nous directement
               </Button>
             </a>
