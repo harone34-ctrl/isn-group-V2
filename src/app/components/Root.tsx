@@ -28,11 +28,11 @@ export function Root() {
         <div className="container mx-auto px-4">
           {/* Top bar */}
           <div className="hidden md:flex items-center justify-end gap-4 py-2 text-sm text-neutral-400 border-b border-neutral-800">
-            <a href="tel:+33767804247" className="flex items-center gap-2 hover:text-red-400 transition-colors">
+            <a href="tel:+33767804247" className="flex items-center gap-2 hover:text-red-500 transition-colors">
               <Phone className="h-4 w-4" />
               07 67 80 42 47
             </a>
-            <a href="mailto:contact@isngroup.fr" className="flex items-center gap-2 hover:text-red-400 transition-colors">
+            <a href="mailto:contact@isngroup.fr" className="flex items-center gap-2 hover:text-red-500 transition-colors">
               <Mail className="h-4 w-4" />
               contact@isngroup.fr
             </a>
@@ -58,8 +58,8 @@ export function Root() {
                   to={item.href}
                   className={`transition-colors ${
                     isActive(item.href)
-                      ? "text-red-400 font-medium"
-                      : "text-neutral-300 hover:text-red-400"
+                      ? "text-red-500 font-medium"
+                      : "text-neutral-400 hover:text-red-500"
                   }`}
                 >
                   {item.name}
@@ -72,7 +72,7 @@ export function Root() {
 
             {/* Mobile menu button */}
             <button
-              className="md:hidden p-2 text-neutral-300"
+              className="md:hidden p-2 text-neutral-400"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -89,8 +89,8 @@ export function Root() {
                     to={item.href}
                     className={`py-2 transition-colors ${
                       isActive(item.href)
-                        ? "text-red-400 font-medium"
-                        : "text-neutral-300"
+                        ? "text-red-500 font-medium"
+                        : "text-neutral-400"
                     }`}
                     onClick={() => setMobileMenuOpen(false)}
                   >

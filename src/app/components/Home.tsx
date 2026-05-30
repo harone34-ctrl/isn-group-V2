@@ -84,24 +84,24 @@ export function Home() {
 
         <div className="container mx-auto px-4 py-20 md:py-32 relative">
           <div className="max-w-3xl">
-            <Badge className="mb-4 bg-red-500/20 text-red-400 border border-red-500/30">
+            <Badge className="mb-4 bg-red-500/20 text-red-500 border border-red-500/30">
               Support Informatique & Conception Web
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
               Un technicien de terrain à votre service
             </h1>
-            <p className="text-xl mb-8 text-neutral-300">
+            <p className="text-xl mb-8 text-neutral-400">
               ISN Group vous accompagne au quotidien : dépannage, maintenance, gestion de parc
               informatique et création de sites web professionnels — avec fiabilité et transparence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/contact">
-                <Button size="lg" className="bg-red-500 text-neutral-950 hover:bg-red-400 font-semibold">
+                <Button size="lg" className="bg-red-500 text-neutral-950 hover:bg-red-600 font-semibold">
                   Demander un devis gratuit
                 </Button>
               </Link>
               <Link to="/services">
-                <Button size="lg" variant="outline" className="border-red-500/50 text-red-400 hover:bg-red-500/10">
+                <Button size="lg" variant="outline" className="border-red-500/50 text-red-500 hover:bg-red-700/10">
                   Découvrir nos services
                 </Button>
               </Link>
@@ -131,7 +131,7 @@ export function Home() {
                 <Card key={index} className="hover:border-red-500/40 transition-all hover:shadow-red-500/5 hover:shadow-lg">
                   <CardHeader>
                     <div className="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center mb-4">
-                      <Icon className="h-6 w-6 text-red-400" />
+                      <Icon className="h-6 w-6 text-red-500" />
                     </div>
                     <CardTitle>{service.title}</CardTitle>
                     <CardDescription>{service.description}</CardDescription>
@@ -170,7 +170,7 @@ export function Home() {
                   return (
                     <div key={index} className="flex gap-4">
                       <div className="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Icon className="h-6 w-6 text-red-400" />
+                        <Icon className="h-6 w-6 text-red-500" />
                       </div>
                       <div>
                         <h3 className="font-semibold mb-2 text-white">{benefit.title}</h3>
@@ -238,7 +238,7 @@ export function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">
-              <Button size="lg" className="bg-red-600 text-white hover:bg-red-500 font-semibold">
+              <Button size="lg" className="bg-red-600 text-white hover:bg-red-700 font-semibold">
                 Demander un devis gratuit
               </Button>
             </Link>

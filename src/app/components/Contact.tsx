@@ -92,13 +92,13 @@ export function Contact() {
       <section className="bg-gradient-to-br from-neutral-950 via-neutral-900 to-red-950 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
-            <Badge className="mb-4 bg-red-500/20 text-red-400 border border-red-500/30">
+            <Badge className="mb-4 bg-red-500/20 text-red-500 border border-red-500/30">
               Contact
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Un besoin ? Parlons-en.
             </h1>
-            <p className="text-xl text-neutral-300">
+            <p className="text-xl text-neutral-400">
               Décrivez votre situation — panne, projet web ou gestion de parc — et je vous
               reviens rapidement avec une réponse concrète.
             </p>
@@ -124,7 +124,7 @@ export function Contact() {
                   const content = (
                     <div className="flex gap-4">
                       <div className="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Icon className="h-6 w-6 text-red-400" />
+                        <Icon className="h-6 w-6 text-red-500" />
                       </div>
                       <div>
                         <div className="font-semibold mb-1 text-white">{info.title}</div>
@@ -157,8 +157,8 @@ export function Contact() {
                   <ul className="space-y-2">
                     {benefits.map((benefit, index) => (
                       <li key={index} className="flex items-start gap-2 text-sm">
-                        <CheckCircle className="h-4 w-4 text-red-400 flex-shrink-0 mt-0.5" />
-                        <span className="text-neutral-300">{benefit}</span>
+                        <CheckCircle className="h-4 w-4 text-red-500 flex-shrink-0 mt-0.5" />
+                        <span className="text-neutral-400">{benefit}</span>
                       </li>
                     ))}
                   </ul>
@@ -273,7 +273,7 @@ export function Contact() {
                     </div>
 
                     <div className="flex items-start gap-2 text-sm text-neutral-400">
-                      <CheckCircle className="h-4 w-4 text-red-400 flex-shrink-0 mt-0.5" />
+                      <CheckCircle className="h-4 w-4 text-red-500 flex-shrink-0 mt-0.5" />
                       <p>
                         En soumettant ce formulaire, vous acceptez d'être recontacté par ISN Group
                         concernant votre demande. Vos données ne sont pas transmises à des tiers.

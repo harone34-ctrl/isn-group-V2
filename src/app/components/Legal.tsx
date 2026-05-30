@@ -2,7 +2,7 @@
 
 export function Legal() {
   return (
-    <div className="min-h-screen bg-neutral-950 text-neutral-300">
+    <div className="min-h-screen bg-neutral-950 text-neutral-400">
       <Helmet>
         <title>Mentions légales &amp; Confidentialité | ISN Group</title>
         <meta name="description" content="Mentions légales, politique de confidentialité et informations sur l'hébergement du site ISN Group." />
@@ -14,7 +14,7 @@ export function Legal() {
 
         {/* Mentions légales */}
         <section className="mb-12">
-          <h2 className="text-xl font-semibold text-red-400 mb-6 pb-2 border-b border-neutral-800">
+          <h2 className="text-xl font-semibold text-red-500 mb-6 pb-2 border-b border-neutral-800">
             Mentions légales
           </h2>
           <div className="space-y-4 text-sm leading-relaxed">
@@ -25,7 +25,7 @@ export function Legal() {
               <p>Responsable de publication : Boulfekhar Harone</p>
               <p>
                 Contact :{" "}
-                <a href="mailto:contact@isngroup.fr" className="text-red-400 hover:underline">
+                <a href="mailto:contact@isngroup.fr" className="text-red-500 hover:underline">
                   contact@isngroup.fr
                 </a>
               </p>
@@ -49,7 +49,7 @@ export function Legal() {
 
         {/* Politique de confidentialité */}
         <section>
-          <h2 className="text-xl font-semibold text-red-400 mb-6 pb-2 border-b border-neutral-800">
+          <h2 className="text-xl font-semibold text-red-500 mb-6 pb-2 border-b border-neutral-800">
             Politique de confidentialité
           </h2>
           <div className="space-y-4 text-sm leading-relaxed">
@@ -74,7 +74,7 @@ export function Legal() {
                 Conformément au Règlement Général sur la Protection des Données (RGPD), vous
                 disposez d'un droit d'accès, de rectification et de suppression de vos données.
                 Pour exercer ces droits, contactez-nous à{" "}
-                <a href="mailto:contact@isngroup.fr" className="text-red-400 hover:underline">
+                <a href="mailto:contact@isngroup.fr" className="text-red-500 hover:underline">
                   contact@isngroup.fr
                 </a>
                 .

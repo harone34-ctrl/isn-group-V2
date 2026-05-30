@@ -87,13 +87,13 @@ export function Services() {
       <section className="bg-gradient-to-br from-neutral-950 via-neutral-900 to-red-950 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
-            <Badge className="mb-4 bg-red-500/20 text-red-400 border border-red-500/30">
+            <Badge className="mb-4 bg-red-500/20 text-red-500 border border-red-500/30">
               Nos Services
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Ce que nous faisons, nous le faisons bien
             </h1>
-            <p className="text-xl text-neutral-300">
+            <p className="text-xl text-neutral-400">
               ISN Group concentre son expertise sur deux domaines maîtrisés : le support
               informatique de terrain et la conception web professionnelle.
             </p>
@@ -116,7 +116,7 @@ export function Services() {
                 >
                   <div className={isEven ? "" : "md:col-start-2"}>
                     <div className="w-16 h-16 bg-red-500/10 rounded-lg flex items-center justify-center mb-6">
-                      <Icon className="h-8 w-8 text-red-400" />
+                      <Icon className="h-8 w-8 text-red-500" />
                     </div>
                     <h2 className="text-3xl font-bold mb-4 text-white">{service.title}</h2>
                     <p className="text-xl text-neutral-400 mb-6">{service.description}</p>
@@ -124,8 +124,8 @@ export function Services() {
                     <div className="space-y-3 mb-8">
                       {service.features.map((feature, idx) => (
                         <div key={idx} className="flex items-start gap-3">
-                          <CheckCircle className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
-                          <span className="text-neutral-300">{feature}</span>
+                          <CheckCircle className="h-5 w-5 text-red-500 flex-shrink-0 mt-0.5" />
+                          <span className="text-neutral-400">{feature}</span>
                         </div>
                       ))}
                     </div>
@@ -158,7 +158,7 @@ export function Services() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div>
-              <Badge className="mb-4 bg-red-500/20 text-red-400 border border-red-500/30">
+              <Badge className="mb-4 bg-red-500/20 text-red-500 border border-red-500/30">
                 Haute Performance
               </Badge>
               <h2 className="text-3xl font-bold mb-4 text-white">
@@ -168,7 +168,7 @@ export function Services() {
                 Conception sur mesure de postes de travail et de serveurs hautes performances,
                 validés par des protocoles de stress-test industriels avant livraison.
               </p>
-              <p className="text-neutral-300 mb-8">
+              <p className="text-neutral-400 mb-8">
                 Chaque machine assemblée est soumise à une batterie de tests rigoureux pour
                 garantir la stabilité à long terme. Aucune configuration ne quitte l'atelier
                 sans avoir passé le protocole complet.
@@ -195,7 +195,7 @@ export function Services() {
                   >
                     <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0" />
                     <div>
-                      <span className="font-mono font-bold text-red-400">{proto.name}</span>
+                      <span className="font-mono font-bold text-red-500">{proto.name}</span>
                       <p className="text-neutral-400 text-sm mt-1">{proto.desc}</p>
                     </div>
                   </div>
@@ -220,9 +220,9 @@ export function Services() {
                 ].map((step, idx) => (
                   <div key={idx} className="flex items-center gap-3">
                     <div className="w-6 h-6 rounded-full bg-red-500/10 border border-red-500/30 flex items-center justify-center flex-shrink-0">
-                      <span className="text-red-400 text-xs font-bold">{idx + 1}</span>
+                      <span className="text-red-500 text-xs font-bold">{idx + 1}</span>
                     </div>
-                    <span className="text-neutral-300 text-sm">{step}</span>
+                    <span className="text-neutral-400 text-sm">{step}</span>
                   </div>
                 ))}
               </div>
@@ -253,7 +253,7 @@ export function Services() {
               <AlertTriangle className="h-6 w-6 text-amber-400 flex-shrink-0 mt-1" />
               <div>
                 <h3 className="font-bold text-amber-400 mb-2">Contexte économique 2024–2026</h3>
-                <p className="text-neutral-300 leading-relaxed">
+                <p className="text-neutral-400 leading-relaxed">
                   Samsung, SK Hynix et Micron ont massivement réorienté leurs chaînes de production
                   vers la mémoire HBM destinée aux puces IA (H100, MI300X…). Cette rareté artificielle
                   sur le marché grand public et professionnel a fait flamber les prix des{" "}
@@ -274,7 +274,7 @@ export function Services() {
             {/* Thermique */}
             <div className="p-6 bg-neutral-800/50 rounded-xl border border-neutral-700 hover:border-red-500/40 transition-all flex flex-col">
               <div className="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center mb-4">
-                <Thermometer className="h-6 w-6 text-red-400" />
+                <Thermometer className="h-6 w-6 text-red-500" />
               </div>
               <h3 className="font-bold text-white text-lg mb-2">Optimisation thermique chirurgicale</h3>
               <p className="text-neutral-400 text-sm mb-4 leading-relaxed">
@@ -287,8 +287,8 @@ export function Services() {
                   "Nettoyage des radiateurs et optimisation des flux d'air",
                   "Profils de ventilation calibrés sous charge réelle (HWiNFO64)",
                 ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-neutral-300">
-                    <CheckCircle className="h-4 w-4 text-red-400 flex-shrink-0 mt-0.5" />
+                  <li key={i} className="flex items-start gap-2 text-sm text-neutral-400">
+                    <CheckCircle className="h-4 w-4 text-red-500 flex-shrink-0 mt-0.5" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -298,7 +298,7 @@ export function Services() {
             {/* SSD */}
             <div className="p-6 bg-neutral-800/50 rounded-xl border border-neutral-700 hover:border-red-500/40 transition-all flex flex-col">
               <div className="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center mb-4">
-                <HardDrive className="h-6 w-6 text-red-400" />
+                <HardDrive className="h-6 w-6 text-red-500" />
               </div>
               <h3 className="font-bold text-white text-lg mb-2">Prolongation de la durée de vie des SSD</h3>
               <p className="text-neutral-400 text-sm mb-4 leading-relaxed">
@@ -311,8 +311,8 @@ export function Services() {
                   "Réduction des cycles d'écriture inutiles (swap, logs, fichiers temporaires)",
                   "Monitoring S.M.A.R.T. — anticiper la défaillance avant toute perte de données",
                 ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-neutral-300">
-                    <CheckCircle className="h-4 w-4 text-red-400 flex-shrink-0 mt-0.5" />
+                  <li key={i} className="flex items-start gap-2 text-sm text-neutral-400">
+                    <CheckCircle className="h-4 w-4 text-red-500 flex-shrink-0 mt-0.5" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -322,7 +322,7 @@ export function Services() {
             {/* Audit stabilité */}
             <div className="p-6 bg-neutral-800/50 rounded-xl border border-neutral-700 hover:border-red-500/40 transition-all flex flex-col">
               <div className="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center mb-4">
-                <Activity className="h-6 w-6 text-red-400" />
+                <Activity className="h-6 w-6 text-red-500" />
               </div>
               <h3 className="font-bold text-white text-lg mb-2">Audit de stabilité électrique &amp; matériel</h3>
               <p className="text-neutral-400 text-sm mb-4 leading-relaxed">
@@ -335,8 +335,8 @@ export function Services() {
                   { tool: "Prime95", desc: "Validation de la stabilité CPU + alimentation sous charge max" },
                   { tool: "FurMark", desc: "Burn-in GPU — anticiper les défaillances graphiques" },
                 ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-neutral-300">
-                    <span className="font-mono text-xs text-red-400 bg-red-500/10 px-1.5 py-0.5 rounded flex-shrink-0 mt-0.5">
+                  <li key={i} className="flex items-start gap-2 text-sm text-neutral-400">
+                    <span className="font-mono text-xs text-red-500 bg-red-500/10 px-1.5 py-0.5 rounded flex-shrink-0 mt-0.5">
                       {item.tool}
                     </span>
                     <span>{item.desc}</span>
@@ -378,7 +378,7 @@ export function Services() {
                 <Card key={index} className="hover:border-red-500/40 transition-all">
                   <CardHeader>
                     <div className="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center mb-4">
-                      <Icon className="h-6 w-6 text-red-400" />
+                      <Icon className="h-6 w-6 text-red-500" />
                     </div>
                     <CardTitle className="text-lg">{service.title}</CardTitle>
                     <CardDescription>{service.description}</CardDescription>
@@ -401,7 +401,7 @@ export function Services() {
             je vous reviens rapidement avec une réponse concrète.
           </p>
           <Link to="/contact">
-            <Button size="lg" className="bg-red-600 text-white hover:bg-red-500 font-semibold">
+            <Button size="lg" className="bg-red-600 text-white hover:bg-red-700 font-semibold">
               Demander un devis personnalisé
             </Button>
           </Link>
