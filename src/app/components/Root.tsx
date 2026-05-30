@@ -112,25 +112,25 @@ export function Root() {
       </main>
 
       {/* Footer */}
-      <footer aria-label="Pied de page" className="bg-black text-neutral-400">
-        <div className="container mx-auto px-4 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <footer aria-label="Pied de page" className="bg-black text-neutral-400 border-t border-neutral-800">
+        <div className="container mx-auto px-4 py-16">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
             <div>
-              <Link to="/" className="flex items-center gap-2 mb-4 w-fit">
-                <div className="w-10 h-10 bg-red-500 rounded-lg flex items-center justify-center">
-                  <span className="text-neutral-950 font-bold text-sm">ISN</span>
+              <Link to="/" className="flex items-center gap-2 mb-5 w-fit">
+                <div className="w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">ISN</span>
                 </div>
                 <div className="font-bold text-white text-xl">ISN Group</div>
               </Link>
-              <p className="text-sm">
-                Votre technicien informatique de confiance – support de terrain et conception web.
+              <p className="text-base leading-relaxed">
+                Votre technicien informatique de confiance — support de terrain et conception web professionnelle.
               </p>
             </div>
 
             <div>
-              <h3 className="font-semibold text-white mb-4">Services</h3>
-              <ul className="space-y-2 text-sm">
-                <li><Link to="/services" className="hover:text-white transition-colors">Maintenance & Dépannage</Link></li>
+              <h3 className="text-xl font-bold uppercase tracking-wide text-white mb-5">Services</h3>
+              <ul className="space-y-3 text-base">
+                <li><Link to="/services" className="hover:text-white transition-colors">Maintenance &amp; Dépannage</Link></li>
                 <li><Link to="/services" className="hover:text-white transition-colors">Gestion de parc informatique</Link></li>
                 <li><Link to="/services" className="hover:text-white transition-colors">Création de sites vitrines</Link></li>
                 <li><Link to="/services" className="hover:text-white transition-colors">Assistance utilisateur</Link></li>
@@ -138,8 +138,8 @@ export function Root() {
             </div>
 
             <div>
-              <h3 className="font-semibold text-white mb-4">Entreprise</h3>
-              <ul className="space-y-2 text-sm">
+              <h3 className="text-xl font-bold uppercase tracking-wide text-white mb-5">Entreprise</h3>
+              <ul className="space-y-3 text-base">
                 <li><Link to="/about" className="hover:text-white transition-colors">À propos</Link></li>
                 <li><Link to="/contact" className="hover:text-white transition-colors">Contact</Link></li>
                 <li><Link to="/legal" className="hover:text-white transition-colors">Mentions légales</Link></li>
@@ -148,23 +148,26 @@ export function Root() {
             </div>
 
             <div>
-              <h3 className="font-semibold text-white mb-4">Contact</h3>
-              <ul className="space-y-2 text-sm">
+              <h3 className="text-xl font-bold uppercase tracking-wide text-white mb-5">Contact</h3>
+              <a
+                href="tel:+33767804247"
+                className="flex items-center gap-3 text-3xl font-extrabold text-white hover:text-red-500 transition-colors mb-5"
+              >
+                <Phone className="h-7 w-7 flex-shrink-0" />
+                07 67 80 42 47
+              </a>
+              <ul className="space-y-3 text-base">
                 <li className="flex items-center gap-2">
-                  <Phone className="h-4 w-4" />
-                  <a href="tel:0767804247" className="hover:text-white transition-colors">07 67 80 42 47</a>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Mail className="h-4 w-4" />
+                  <Mail className="h-4 w-4 flex-shrink-0" />
                   <a href="mailto:contact@isngroup.fr" className="hover:text-white transition-colors">contact@isngroup.fr</a>
                 </li>
                 <li>Du lundi au vendredi</li>
-                <li>9h - 18h</li>
+                <li>9h – 18h</li>
               </ul>
             </div>
           </div>
 
-          <div className="border-t border-neutral-800 mt-8 pt-8 text-center text-sm">
+          <div className="border-t border-neutral-800 mt-10 pt-8 text-center text-sm">
             <p>© 2026 ISN Group. Tous droits réservés.</p>
           </div>
         </div>

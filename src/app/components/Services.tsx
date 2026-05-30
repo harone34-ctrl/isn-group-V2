@@ -191,7 +191,7 @@ export function Services() {
                 ].map((proto, idx) => (
                   <div
                     key={idx}
-                    className="flex items-start gap-4 p-4 bg-neutral-900/80 rounded-lg border border-neutral-800 hover:border-red-500/40 transition-all"
+                    className="flex items-start gap-4 p-4 bg-neutral-900 rounded-lg border border-neutral-800 hover:border-red-500/40 transition-all"
                   >
                     <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0" />
                     <div>
@@ -203,7 +203,7 @@ export function Services() {
               </div>
             </div>
 
-            <div className="bg-neutral-900/50 rounded-xl p-8 border border-neutral-800">
+            <div className="bg-neutral-900 rounded-xl p-8 border border-neutral-800">
               <h3 className="text-xl font-bold text-white mb-6">
                 Protocole de validation avant livraison
               </h3>
@@ -272,7 +272,7 @@ export function Services() {
           {/* Trois solutions de terrain */}
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {/* Thermique */}
-            <div className="p-6 bg-neutral-900/80 rounded-xl border border-neutral-800 hover:border-red-500/40 transition-all flex flex-col">
+            <div className="p-6 bg-black rounded-xl border border-neutral-800 hover:border-red-500/40 transition-all flex flex-col">
               <div className="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center mb-4">
                 <Thermometer className="h-6 w-6 text-red-500" />
               </div>
@@ -296,7 +296,7 @@ export function Services() {
             </div>
 
             {/* SSD */}
-            <div className="p-6 bg-neutral-900/80 rounded-xl border border-neutral-800 hover:border-red-500/40 transition-all flex flex-col">
+            <div className="p-6 bg-black rounded-xl border border-neutral-800 hover:border-red-500/40 transition-all flex flex-col">
               <div className="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center mb-4">
                 <HardDrive className="h-6 w-6 text-red-500" />
               </div>
@@ -320,7 +320,7 @@ export function Services() {
             </div>
 
             {/* Audit stabilité */}
-            <div className="p-6 bg-neutral-900/80 rounded-xl border border-neutral-800 hover:border-red-500/40 transition-all flex flex-col">
+            <div className="p-6 bg-black rounded-xl border border-neutral-800 hover:border-red-500/40 transition-all flex flex-col">
               <div className="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center mb-4">
                 <Activity className="h-6 w-6 text-red-500" />
               </div>
@@ -375,7 +375,7 @@ export function Services() {
             {additionalServices.map((service, index) => {
               const Icon = service.icon;
               return (
-                <Card key={index} className="hover:border-red-500/40 transition-all">
+                <Card key={index} className="bg-black border border-neutral-800 hover:border-red-500/40 transition-all">
                   <CardHeader>
                     <div className="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center mb-4">
                       <Icon className="h-6 w-6 text-red-500" />

@@ -124,7 +124,7 @@ export function About() {
             {values.map((value, index) => {
               const Icon = value.icon;
               return (
-                <Card key={index} className="text-center hover:border-red-500/40 transition-all">
+                <Card key={index} className="bg-neutral-900 text-center hover:border-red-500/40 transition-all">
                   <CardContent className="pt-6">
                     <div className="w-16 h-16 bg-red-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
                       <Icon className="h-8 w-8 text-red-500" />
@@ -182,7 +182,7 @@ export function About() {
             ].map((item, index) => (
               <div
                 key={index}
-                className="bg-neutral-900/80 rounded-xl p-8 border border-neutral-800 hover:border-red-500/40 transition-all"
+                className="bg-black rounded-xl p-8 border border-neutral-800 hover:border-red-500/40 transition-all"
               >
                 <div className="text-5xl font-bold text-red-500/20 mb-4">{item.number}</div>
                 <h3 className="text-2xl font-bold text-white mb-4">{item.pillar}</h3>

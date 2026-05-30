@@ -128,7 +128,7 @@ export function Home() {
             {services.map((service, index) => {
               const Icon = service.icon;
               return (
-                <Card key={index} className="hover:border-red-500/40 transition-all hover:shadow-red-500/5 hover:shadow-lg">
+                <Card key={index} className="bg-neutral-900 hover:border-red-500/40 transition-all hover:shadow-red-500/5 hover:shadow-lg">
                   <CardHeader>
                     <div className="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center mb-4">
                       <Icon className="h-6 w-6 text-red-500" />
