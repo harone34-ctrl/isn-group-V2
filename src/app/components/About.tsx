@@ -101,8 +101,9 @@ export function About() {
             <div className="relative">
               <ImageWithFallback
                 src="/carte-mères-red.jpg"
-                alt="Technicien au travail"
+                alt="Cartes mères et matériel informatique ISN Group"
                 className="rounded-lg shadow-xl w-full h-auto opacity-80"
+                loading="lazy"
               />
             </div>
           </div>
@@ -200,8 +201,9 @@ export function About() {
             <div className="relative order-2 md:order-1">
               <ImageWithFallback
                 src="/serveur-cloud.jpg"
-                alt="Matériel informatique"
+                alt="Salle de serveurs infrastructure cloud ISN Group"
                 className="rounded-lg shadow-xl w-full h-auto opacity-80"
+                loading="lazy"
               />
             </div>
 

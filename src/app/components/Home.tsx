@@ -75,8 +75,9 @@ export function Home() {
         <div className="absolute inset-0 overflow-hidden">
           <ImageWithFallback
             src="/Serveur-informatique-1.png"
-            alt="IT Support"
+            alt="Technicien support informatique ISN Group"
             className="w-full h-full object-cover"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-slate-950/50" />
         </div>
@@ -192,6 +193,7 @@ export function Home() {
                 src="/support-IT.jpg"
                 alt="Technicien informatique au travail"
                 className="rounded-lg shadow-xl w-full h-auto opacity-80"
+                loading="lazy"
               />
             </div>
           </div>
