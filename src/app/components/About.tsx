@@ -48,6 +48,8 @@ export function About() {
       <Helmet>
         <title>À propos – Méthodologie Agile &amp; Expertise Terrain | ISN Group</title>
         <meta name="description" content="Découvrez ISN Group : une approche Agile, Itérative et Incrémentale du support informatique. Technicien passionné au service de votre infrastructure et de vos projets numériques." />
+        <link rel="canonical" href="https://isn-group-v2.vercel.app/about" />
+        <meta property="og:url" content="https://isn-group-v2.vercel.app/about" />
       </Helmet>
 
       {/* Hero Section */}

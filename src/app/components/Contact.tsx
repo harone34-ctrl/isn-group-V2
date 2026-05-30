@@ -84,6 +84,8 @@ export function Contact() {
       <Helmet>
         <title>Contact &amp; Devis Gratuit – ISN Group</title>
         <meta name="description" content="Contactez ISN Group pour un devis gratuit et sans engagement. Support informatique, infogérance MSP, maintenance d'infrastructure. Réponse sous 24h ouvrées." />
+        <link rel="canonical" href="https://isn-group-v2.vercel.app/contact" />
+        <meta property="og:url" content="https://isn-group-v2.vercel.app/contact" />
       </Helmet>
 
       {/* Hero Section */}

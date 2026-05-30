@@ -79,6 +79,8 @@ export function Services() {
       <Helmet>
         <title>Nos Services – Maintenance, MSP &amp; Assemblage Haute Performance | ISN Group</title>
         <meta name="description" content="Pôle support technique et conception web : maintenance préventive, infogérance MSP, assemblage et validation de configurations haute performance (MemTest86, Prime95, FurMark)." />
+        <link rel="canonical" href="https://isn-group-v2.vercel.app/services" />
+        <meta property="og:url" content="https://isn-group-v2.vercel.app/services" />
       </Helmet>
 
       {/* Hero Section */}

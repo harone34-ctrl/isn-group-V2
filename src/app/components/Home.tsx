@@ -66,6 +66,8 @@ export function Home() {
       <Helmet>
         <title>ISN Group – Support Informatique, Infogérance MSP &amp; Architecture Matérielle</title>
         <meta name="description" content="Innovative Systems &amp; Networks – Support informatique, infogérance MSP, architecture matérielle haute performance et maintenance d'infrastructure pour entreprises et professionnels." />
+        <link rel="canonical" href="https://isn-group-v2.vercel.app/" />
+        <meta property="og:url" content="https://isn-group-v2.vercel.app/" />
       </Helmet>
 
       {/* Hero Section */}
