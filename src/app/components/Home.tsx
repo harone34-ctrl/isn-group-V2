@@ -87,6 +87,9 @@ export function Home() {
             <Badge className="mb-4 bg-red-500/20 text-red-500 border border-red-500/30">
               Support Informatique & Conception Web
             </Badge>
+            <p className="text-xs font-semibold uppercase tracking-widest text-neutral-400 mb-3">
+              Innovative Systems &amp; Networks
+            </p>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
               Un technicien de terrain à votre service
             </h1>
