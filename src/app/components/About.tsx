@@ -53,16 +53,16 @@ export function About() {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="bg-black text-white py-20">
+      <section className="bg-[#0a4d92] text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
-            <Badge className="mb-4 bg-red-500/20 text-red-500 border border-red-500/30">
+            <Badge className="mb-4 bg-white/20 text-white border border-white/30">
               À propos d'ISN Group
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Un technicien passionné, à votre service
             </h1>
-            <p className="text-xl text-neutral-400">
+            <p className="text-xl text-blue-100">
               ISN Group, c'est avant tout une expertise terrain honnête, au service de vos
               besoins informatiques réels.
             </p>
@@ -71,15 +71,15 @@ export function About() {
       </section>
 
       {/* Mission Section */}
-      <section className="py-20 bg-neutral-900">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <Badge className="mb-4">Notre Mission</Badge>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-neutral-900">
                 De la technique au service de vos projets
               </h2>
-              <div className="space-y-4 text-neutral-400">
+              <div className="space-y-4 text-neutral-600">
                 <p>
                   ISN Group est fondé sur une conviction simple : l'informatique doit rester
                   accessible, compréhensible et fiable. Que vous soyez un professionnel en quête
@@ -111,11 +111,11 @@ export function About() {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 bg-black">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge className="mb-4">Nos Valeurs</Badge>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-neutral-900">
               Ce qui guide chaque intervention
             </h2>
           </div>
@@ -124,13 +124,13 @@ export function About() {
             {values.map((value, index) => {
               const Icon = value.icon;
               return (
-                <Card key={index} className="bg-neutral-900 text-center hover:border-red-500/40 transition-all">
+                <Card key={index} className="bg-gray-50 text-center hover:border-[#0a4d92]/40 transition-all">
                   <CardContent className="pt-6">
-                    <div className="w-16 h-16 bg-red-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Icon className="h-8 w-8 text-red-500" />
+                    <div className="w-16 h-16 bg-[#0a4d92]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Icon className="h-8 w-8 text-[#0a4d92]" />
                     </div>
-                    <h3 className="font-bold text-xl mb-2 text-white">{value.title}</h3>
-                    <p className="text-neutral-400">{value.description}</p>
+                    <h3 className="font-bold text-xl mb-2 text-neutral-900">{value.title}</h3>
+                    <p className="text-neutral-600">{value.description}</p>
                   </CardContent>
                 </Card>
               );
@@ -140,14 +140,14 @@ export function About() {
       </section>
 
       {/* Methodology Section */}
-      <section className="py-20 bg-neutral-900">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge className="mb-4">Méthodologie</Badge>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-neutral-900">
               Une approche Agile, Itérative et Incrémentale
             </h2>
-            <p className="text-xl text-neutral-400 max-w-2xl mx-auto">
+            <p className="text-xl text-neutral-600 max-w-2xl mx-auto">
               Chaque intervention suit une méthode éprouvée : avancer par cycles courts,
               ajuster en continu, et apporter de la valeur concrète à chaque étape.
             </p>
@@ -182,12 +182,12 @@ export function About() {
             ].map((item, index) => (
               <div
                 key={index}
-                className="bg-black rounded-xl p-8 border border-neutral-800 hover:border-red-500/40 transition-all"
+                className="bg-white rounded-xl p-8 border border-gray-200 hover:border-[#0a4d92]/40 transition-all"
               >
-                <div className="text-5xl font-bold text-red-500/20 mb-4">{item.number}</div>
-                <h3 className="text-2xl font-bold text-white mb-4">{item.pillar}</h3>
-                <p className="text-neutral-400 mb-4">{item.description}</p>
-                <p className="text-neutral-400 text-sm border-t border-neutral-800 pt-4">{item.detail}</p>
+                <div className="text-5xl font-bold text-[#0a4d92]/20 mb-4">{item.number}</div>
+                <h3 className="text-2xl font-bold text-neutral-900 mb-4">{item.pillar}</h3>
+                <p className="text-neutral-600 mb-4">{item.description}</p>
+                <p className="text-neutral-600 text-sm border-t border-gray-200 pt-4">{item.detail}</p>
               </div>
             ))}
           </div>
@@ -195,7 +195,7 @@ export function About() {
       </section>
 
       {/* Expertise Section */}
-      <section className="py-20 bg-black">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative order-2 md:order-1">
@@ -209,10 +209,10 @@ export function About() {
 
             <div className="order-1 md:order-2">
               <Badge className="mb-4">Mes Engagements</Badge>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-neutral-900">
                 Ce que vous pouvez attendre d'ISN Group
               </h2>
-              <p className="text-neutral-400 mb-6">
+              <p className="text-neutral-600 mb-6">
                 Chaque prestation repose sur les mêmes principes : écoute du besoin réel,
                 diagnostic honnête, intervention efficace et suivi après livraison.
               </p>
@@ -220,8 +220,8 @@ export function About() {
               <div className="grid grid-cols-1 gap-3 mb-8">
                 {engagements.map((item, index) => (
                   <div key={index} className="flex items-start gap-2">
-                    <CheckCircle className="h-5 w-5 text-red-500 flex-shrink-0 mt-0.5" />
-                    <span className="text-neutral-400">{item}</span>
+                    <CheckCircle className="h-5 w-5 text-[#0a4d92] flex-shrink-0 mt-0.5" />
+                    <span className="text-neutral-600">{item}</span>
                   </div>
                 ))}
               </div>
@@ -231,23 +231,23 @@ export function About() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-neutral-800 to-black text-white border-t border-neutral-800">
+      <section className="py-20 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#1565C0] to-[#062d5c] text-white border-t border-[#0d3d72]">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
             Parlons de votre projet
           </h2>
-          <p className="text-xl text-neutral-400 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
             Que ce soit pour un dépannage urgent, une gestion de parc ou un site web,
             contactez ISN Group pour un premier échange sans engagement.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">
-              <Button size="lg" className="bg-red-600 text-white hover:bg-red-700 font-semibold">
+              <Button size="lg" className="bg-white text-[#0a4d92] hover:bg-blue-50 font-semibold">
                 Prendre contact
               </Button>
             </Link>
             <Link to="/services">
-              <Button size="lg" variant="outline" className="border-neutral-600 text-white hover:bg-neutral-900">
+              <Button size="lg" variant="outline" className="border-white/50 text-white hover:bg-white/10">
                 Voir nos services
               </Button>
             </Link>
