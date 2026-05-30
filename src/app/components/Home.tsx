@@ -228,22 +228,22 @@ export function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-red-600 text-white">
+      <section className="py-20 bg-neutral-950 text-white border-t border-neutral-800">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
             Un problème informatique ? Un projet web ?
           </h2>
-          <p className="text-xl text-red-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-neutral-400 mb-8 max-w-2xl mx-auto">
             Contactez ISN Group pour un devis gratuit et sans engagement. Réponse rapide garantie.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">
-              <Button size="lg" className="bg-neutral-950 text-red-400 hover:bg-neutral-900">
+              <Button size="lg" className="bg-red-600 text-white hover:bg-red-500 font-semibold">
                 Demander un devis gratuit
               </Button>
             </Link>
             <a href="tel:+33767804247">
-              <Button size="lg" variant="outline" className="border-red-200/50 text-white hover:bg-red-700">
+              <Button size="lg" variant="outline" className="border-neutral-600 text-white hover:bg-neutral-800">
                 Appelez-nous directement
               </Button>
             </a>

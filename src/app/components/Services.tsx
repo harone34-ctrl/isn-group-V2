@@ -391,17 +391,17 @@ export function Services() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-red-600 text-white">
+      <section className="py-20 bg-neutral-950 text-white border-t border-neutral-800">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
             Votre besoin ne rentre pas dans une case ?
           </h2>
-          <p className="text-xl text-red-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-neutral-400 mb-8 max-w-2xl mx-auto">
             Chaque situation est différente. Décrivez-moi votre projet ou votre problème —
             je vous reviens rapidement avec une réponse concrète.
           </p>
           <Link to="/contact">
-            <Button size="lg" className="bg-neutral-950 text-red-400 hover:bg-neutral-900">
+            <Button size="lg" className="bg-red-600 text-white hover:bg-red-500 font-semibold">
               Demander un devis personnalisé
             </Button>
           </Link>
