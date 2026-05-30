@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+﻿import { Helmet } from "react-helmet-async";
 import { useState } from "react";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
@@ -89,16 +89,16 @@ export function Contact() {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-slate-950 via-slate-900 to-emerald-950 text-white py-20">
+      <section className="bg-gradient-to-br from-gray-100 via-white to-red-50 text-slate-900 py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
-            <Badge className="mb-4 bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+            <Badge className="mb-4 bg-red-100 text-red-600 border border-red-200">
               Contact
             </Badge>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-slate-900">
               Un besoin ? Parlons-en.
             </h1>
-            <p className="text-xl text-slate-300">
+            <p className="text-xl text-slate-600">
               Décrivez votre situation — panne, projet web ou gestion de parc — et je vous
               reviens rapidement avec une réponse concrète.
             </p>
@@ -107,13 +107,13 @@ export function Contact() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-20 bg-slate-900">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-3 gap-12">
             {/* Contact Info */}
             <div className="lg:col-span-1">
-              <h2 className="text-2xl font-bold mb-6 text-white">Coordonnées</h2>
-              <p className="text-slate-400 mb-8">
+              <h2 className="text-2xl font-bold mb-6 text-slate-900">Coordonnées</h2>
+              <p className="text-slate-500 mb-8">
                 Remplissez le formulaire ou contactez-moi directement — je suis disponible
                 du lundi au vendredi.
               </p>
@@ -123,13 +123,13 @@ export function Contact() {
                   const Icon = info.icon;
                   const content = (
                     <div className="flex gap-4">
-                      <div className="w-12 h-12 bg-emerald-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Icon className="h-6 w-6 text-emerald-400" />
+                      <div className="w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Icon className="h-6 w-6 text-red-600" />
                       </div>
                       <div>
-                        <div className="font-semibold mb-1 text-white">{info.title}</div>
+                        <div className="font-semibold mb-1 text-slate-900">{info.title}</div>
                         {info.details.map((detail, idx) => (
-                          <div key={idx} className="text-sm text-slate-400">{detail}</div>
+                          <div key={idx} className="text-sm text-slate-500">{detail}</div>
                         ))}
                       </div>
                     </div>
@@ -151,14 +151,14 @@ export function Contact() {
 
               <Card className="border-emerald-900 bg-emerald-950/40">
                 <CardHeader>
-                  <CardTitle className="text-lg text-white">Ce que vous obtenez</CardTitle>
+                  <CardTitle className="text-lg text-slate-900">Ce que vous obtenez</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2">
                     {benefits.map((benefit, index) => (
                       <li key={index} className="flex items-start gap-2 text-sm">
-                        <CheckCircle className="h-4 w-4 text-emerald-400 flex-shrink-0 mt-0.5" />
-                        <span className="text-slate-300">{benefit}</span>
+                        <CheckCircle className="h-4 w-4 text-red-600 flex-shrink-0 mt-0.5" />
+                        <span className="text-slate-600">{benefit}</span>
                       </li>
                     ))}
                   </ul>
@@ -272,8 +272,8 @@ export function Contact() {
                       />
                     </div>
 
-                    <div className="flex items-start gap-2 text-sm text-slate-400">
-                      <CheckCircle className="h-4 w-4 text-emerald-400 flex-shrink-0 mt-0.5" />
+                    <div className="flex items-start gap-2 text-sm text-slate-500">
+                      <CheckCircle className="h-4 w-4 text-red-600 flex-shrink-0 mt-0.5" />
                       <p>
                         En soumettant ce formulaire, vous acceptez d'être recontacté par ISN Group
                         concernant votre demande. Vos données ne sont pas transmises à des tiers.
@@ -292,11 +292,11 @@ export function Contact() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-slate-950">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge className="mb-4">FAQ</Badge>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900">
               Questions fréquentes
             </h2>
           </div>
@@ -320,12 +320,12 @@ export function Contact() {
                 answer: "Oui, le devis initial est entièrement gratuit et sans engagement. Je prends le temps de comprendre votre besoin avant de chiffrer.",
               },
             ].map((faq, index) => (
-              <Card key={index} className="hover:border-emerald-500/30 transition-all">
+              <Card key={index} className="hover:border-red-200 transition-all">
                 <CardHeader>
                   <CardTitle className="text-lg">{faq.question}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-slate-400">{faq.answer}</p>
+                  <p className="text-slate-500">{faq.answer}</p>
                 </CardContent>
               </Card>
             ))}
