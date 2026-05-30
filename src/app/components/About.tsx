@@ -197,7 +197,7 @@ export function About() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative order-2 md:order-1">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1691435828932-911a7801adfb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZXJ2ZXIlMjByb29tJTIwdGVjaG5vbG9neXxlbnwxfHx8fDE3Nzk5NTAyNzh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src="/serveur-cloud.jpg"
                 alt="Matériel informatique"
                 className="rounded-lg shadow-xl w-full h-auto opacity-80"
               />
