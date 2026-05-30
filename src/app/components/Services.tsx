@@ -39,7 +39,7 @@ export function Services() {
       icon: Globe,
       title: "Pôle Conception Web",
       description: "Création de sites vitrines professionnels, modernes et sur mesure",
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXNpZ24lMjBkZXNrdG9wfGVufDF8fHx8MTc3OTkyNzc2OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "/conception-web.jpg",
       features: [
         "Création de sites vitrines professionnels sur mesure",
         "Design moderne, responsive et adapté à tous les écrans",
