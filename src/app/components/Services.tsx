@@ -25,7 +25,7 @@ export function Services() {
       icon: HeadphonesIcon,
       title: "Pôle Support & Assistance Technique",
       description: "Maintenance, dépannage et gestion de parcs informatiques pour particuliers et professionnels",
-      image: "https://images.unsplash.com/photo-1551434678-e076c223a692?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJVCUyMHN1cHBvcnQlMjBwcm9mZXNzaW9uYWwlMjBvZmZpY2V8ZW58MXx8fHwxNzgwMDI5ODIxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "/materiel-services-2.jpg",
       features: [
         "Maintenance préventive et curative du matériel",
         "Dépannage informatique sur site ou à distance",
