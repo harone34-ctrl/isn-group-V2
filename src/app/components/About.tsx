@@ -231,7 +231,7 @@ export function About() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-neutral-900 text-white border-t border-neutral-800">
+      <section className="py-20 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-neutral-800 to-black text-white border-t border-neutral-800">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
             Parlons de votre projet
