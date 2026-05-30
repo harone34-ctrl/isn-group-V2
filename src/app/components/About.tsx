@@ -98,7 +98,7 @@ export function About() {
 
             <div className="relative">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHRlYW0lMjBtZWV0aW5nfGVufDF8fHx8MTc3OTkyNzc2OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src="/carte-mères-red.jpg"
                 alt="Technicien au travail"
                 className="rounded-lg shadow-xl w-full h-auto opacity-80"
               />
