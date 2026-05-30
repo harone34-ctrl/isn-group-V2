@@ -232,7 +232,7 @@ export function Services() {
       </section>
 
       {/* Éco-efficience & Maintenance Préventive */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 via-gray-50 to-blue-50">
+      <section className="py-20 bg-[#030712]">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <Badge className="mb-4 bg-amber-500/20 text-amber-400 border border-amber-500/40">
