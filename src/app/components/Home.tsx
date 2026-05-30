@@ -130,8 +130,8 @@ export function Home() {
               return (
                 <Card key={index} className="bg-neutral-900 hover:border-red-500/40 transition-all hover:shadow-red-500/5 hover:shadow-lg">
                   <CardHeader>
-                    <div className="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center mb-4">
-                      <Icon className="h-6 w-6 text-red-500" />
+                    <div className="w-16 h-16 bg-red-500/10 rounded-xl flex items-center justify-center mb-4">
+                      <Icon className="h-10 w-10 text-red-400" />
                     </div>
                     <CardTitle>{service.title}</CardTitle>
                     <CardDescription>{service.description}</CardDescription>
@@ -220,7 +220,7 @@ export function Home() {
               <div key={index} className="text-center">
                 <div className="text-5xl font-bold text-red-500/20 mb-4">{item.step}</div>
                 <h3 className="font-semibold text-xl mb-2 text-white">{item.title}</h3>
-                <p className="text-neutral-400">{item.description}</p>
+                <p className="text-lg text-neutral-400">{item.description}</p>
               </div>
             ))}
           </div>
