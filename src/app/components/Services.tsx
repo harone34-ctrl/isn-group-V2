@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+﻿import { Helmet } from "react-helmet-async";
 import { Link } from "react-router";
 import { Button } from "./ui/button";
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
@@ -84,16 +84,16 @@ export function Services() {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-slate-950 via-slate-900 to-emerald-950 text-white py-20">
+      <section className="bg-gradient-to-br from-neutral-950 via-neutral-900 to-red-950 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
-            <Badge className="mb-4 bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+            <Badge className="mb-4 bg-red-500/20 text-red-400 border border-red-500/30">
               Nos Services
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Ce que nous faisons, nous le faisons bien
             </h1>
-            <p className="text-xl text-slate-300">
+            <p className="text-xl text-neutral-300">
               ISN Group concentre son expertise sur deux domaines maîtrisés : le support
               informatique de terrain et la conception web professionnelle.
             </p>
@@ -102,7 +102,7 @@ export function Services() {
       </section>
 
       {/* Main Services */}
-      <section className="py-20 bg-slate-900">
+      <section className="py-20 bg-neutral-900">
         <div className="container mx-auto px-4">
           <div className="space-y-20">
             {mainServices.map((service, index) => {
@@ -115,17 +115,17 @@ export function Services() {
                   className={`grid md:grid-cols-2 gap-12 items-center ${!isEven ? "md:grid-flow-dense" : ""}`}
                 >
                   <div className={isEven ? "" : "md:col-start-2"}>
-                    <div className="w-16 h-16 bg-emerald-500/10 rounded-lg flex items-center justify-center mb-6">
-                      <Icon className="h-8 w-8 text-emerald-400" />
+                    <div className="w-16 h-16 bg-red-500/10 rounded-lg flex items-center justify-center mb-6">
+                      <Icon className="h-8 w-8 text-red-400" />
                     </div>
                     <h2 className="text-3xl font-bold mb-4 text-white">{service.title}</h2>
-                    <p className="text-xl text-slate-400 mb-6">{service.description}</p>
+                    <p className="text-xl text-neutral-400 mb-6">{service.description}</p>
 
                     <div className="space-y-3 mb-8">
                       {service.features.map((feature, idx) => (
                         <div key={idx} className="flex items-start gap-3">
-                          <CheckCircle className="h-5 w-5 text-emerald-400 flex-shrink-0 mt-0.5" />
-                          <span className="text-slate-300">{feature}</span>
+                          <CheckCircle className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
+                          <span className="text-neutral-300">{feature}</span>
                         </div>
                       ))}
                     </div>
@@ -154,21 +154,21 @@ export function Services() {
       </section>
 
       {/* High Performance Hardware Section */}
-      <section className="py-20 bg-slate-950">
+      <section className="py-20 bg-neutral-950">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div>
-              <Badge className="mb-4 bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+              <Badge className="mb-4 bg-red-500/20 text-red-400 border border-red-500/30">
                 Haute Performance
               </Badge>
               <h2 className="text-3xl font-bold mb-4 text-white">
                 Assemblage &amp; Tests de Configurations Haute Performance
               </h2>
-              <p className="text-xl text-slate-400 mb-6">
+              <p className="text-xl text-neutral-400 mb-6">
                 Conception sur mesure de postes de travail et de serveurs hautes performances,
                 validés par des protocoles de stress-test industriels avant livraison.
               </p>
-              <p className="text-slate-300 mb-8">
+              <p className="text-neutral-300 mb-8">
                 Chaque machine assemblée est soumise à une batterie de tests rigoureux pour
                 garantir la stabilité à long terme. Aucune configuration ne quitte l'atelier
                 sans avoir passé le protocole complet.
@@ -191,19 +191,19 @@ export function Services() {
                 ].map((proto, idx) => (
                   <div
                     key={idx}
-                    className="flex items-start gap-4 p-4 bg-slate-800/50 rounded-lg border border-slate-700 hover:border-emerald-500/40 transition-all"
+                    className="flex items-start gap-4 p-4 bg-neutral-800/50 rounded-lg border border-neutral-700 hover:border-red-500/40 transition-all"
                   >
-                    <div className="w-2 h-2 bg-emerald-400 rounded-full mt-2 flex-shrink-0" />
+                    <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0" />
                     <div>
-                      <span className="font-mono font-bold text-emerald-400">{proto.name}</span>
-                      <p className="text-slate-400 text-sm mt-1">{proto.desc}</p>
+                      <span className="font-mono font-bold text-red-400">{proto.name}</span>
+                      <p className="text-neutral-400 text-sm mt-1">{proto.desc}</p>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="bg-slate-800/30 rounded-xl p-8 border border-slate-700">
+            <div className="bg-neutral-800/30 rounded-xl p-8 border border-neutral-700">
               <h3 className="text-xl font-bold text-white mb-6">
                 Protocole de validation avant livraison
               </h3>
@@ -219,10 +219,10 @@ export function Services() {
                   "Rapport de test remis avec la machine",
                 ].map((step, idx) => (
                   <div key={idx} className="flex items-center gap-3">
-                    <div className="w-6 h-6 rounded-full bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center flex-shrink-0">
-                      <span className="text-emerald-400 text-xs font-bold">{idx + 1}</span>
+                    <div className="w-6 h-6 rounded-full bg-red-500/10 border border-red-500/30 flex items-center justify-center flex-shrink-0">
+                      <span className="text-red-400 text-xs font-bold">{idx + 1}</span>
                     </div>
-                    <span className="text-slate-300 text-sm">{step}</span>
+                    <span className="text-neutral-300 text-sm">{step}</span>
                   </div>
                 ))}
               </div>
@@ -232,7 +232,7 @@ export function Services() {
       </section>
 
       {/* Éco-efficience & Maintenance Préventive */}
-      <section className="py-20 bg-gradient-to-br from-slate-900 via-slate-900 to-emerald-950/20">
+      <section className="py-20 bg-gradient-to-br from-neutral-900 via-neutral-900 to-red-950/20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <Badge className="mb-4 bg-amber-500/20 text-amber-400 border border-amber-500/30">
@@ -241,7 +241,7 @@ export function Services() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
               Maîtrise des coûts &amp; Survie de votre matériel face à la crise des composants
             </h2>
-            <p className="text-slate-400 text-lg">
+            <p className="text-neutral-400 text-lg">
               Quand racheter du matériel devient hors de prix, prolonger la durée de vie de l'existant
               n'est plus une option — c'est une stratégie.
             </p>
@@ -253,7 +253,7 @@ export function Services() {
               <AlertTriangle className="h-6 w-6 text-amber-400 flex-shrink-0 mt-1" />
               <div>
                 <h3 className="font-bold text-amber-400 mb-2">Contexte économique 2024–2026</h3>
-                <p className="text-slate-300 leading-relaxed">
+                <p className="text-neutral-300 leading-relaxed">
                   Samsung, SK Hynix et Micron ont massivement réorienté leurs chaînes de production
                   vers la mémoire HBM destinée aux puces IA (H100, MI300X…). Cette rareté artificielle
                   sur le marché grand public et professionnel a fait flamber les prix des{" "}
@@ -272,12 +272,12 @@ export function Services() {
           {/* Trois solutions de terrain */}
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {/* Thermique */}
-            <div className="p-6 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-emerald-500/40 transition-all flex flex-col">
-              <div className="w-12 h-12 bg-emerald-500/10 rounded-lg flex items-center justify-center mb-4">
-                <Thermometer className="h-6 w-6 text-emerald-400" />
+            <div className="p-6 bg-neutral-800/50 rounded-xl border border-neutral-700 hover:border-red-500/40 transition-all flex flex-col">
+              <div className="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center mb-4">
+                <Thermometer className="h-6 w-6 text-red-400" />
               </div>
               <h3 className="font-bold text-white text-lg mb-2">Optimisation thermique chirurgicale</h3>
-              <p className="text-slate-400 text-sm mb-4 leading-relaxed">
+              <p className="text-neutral-400 text-sm mb-4 leading-relaxed">
                 Un composant qui dépasse régulièrement 90 °C vieillit 3× plus vite. La chaleur est
                 le principal accélérateur de dégradation des semi-conducteurs.
               </p>
@@ -287,8 +287,8 @@ export function Services() {
                   "Nettoyage des radiateurs et optimisation des flux d'air",
                   "Profils de ventilation calibrés sous charge réelle (HWiNFO64)",
                 ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-slate-300">
-                    <CheckCircle className="h-4 w-4 text-emerald-400 flex-shrink-0 mt-0.5" />
+                  <li key={i} className="flex items-start gap-2 text-sm text-neutral-300">
+                    <CheckCircle className="h-4 w-4 text-red-400 flex-shrink-0 mt-0.5" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -296,12 +296,12 @@ export function Services() {
             </div>
 
             {/* SSD */}
-            <div className="p-6 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-emerald-500/40 transition-all flex flex-col">
-              <div className="w-12 h-12 bg-emerald-500/10 rounded-lg flex items-center justify-center mb-4">
-                <HardDrive className="h-6 w-6 text-emerald-400" />
+            <div className="p-6 bg-neutral-800/50 rounded-xl border border-neutral-700 hover:border-red-500/40 transition-all flex flex-col">
+              <div className="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center mb-4">
+                <HardDrive className="h-6 w-6 text-red-400" />
               </div>
               <h3 className="font-bold text-white text-lg mb-2">Prolongation de la durée de vie des SSD</h3>
-              <p className="text-slate-400 text-sm mb-4 leading-relaxed">
+              <p className="text-neutral-400 text-sm mb-4 leading-relaxed">
                 Avec les SSD NVMe à des prix historiquement hauts, chaque TBW (Terabytes Written) compte.
                 Nous configurons votre système pour minimiser l'usure inutile.
               </p>
@@ -311,8 +311,8 @@ export function Services() {
                   "Réduction des cycles d'écriture inutiles (swap, logs, fichiers temporaires)",
                   "Monitoring S.M.A.R.T. — anticiper la défaillance avant toute perte de données",
                 ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-slate-300">
-                    <CheckCircle className="h-4 w-4 text-emerald-400 flex-shrink-0 mt-0.5" />
+                  <li key={i} className="flex items-start gap-2 text-sm text-neutral-300">
+                    <CheckCircle className="h-4 w-4 text-red-400 flex-shrink-0 mt-0.5" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -320,12 +320,12 @@ export function Services() {
             </div>
 
             {/* Audit stabilité */}
-            <div className="p-6 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-emerald-500/40 transition-all flex flex-col">
-              <div className="w-12 h-12 bg-emerald-500/10 rounded-lg flex items-center justify-center mb-4">
-                <Activity className="h-6 w-6 text-emerald-400" />
+            <div className="p-6 bg-neutral-800/50 rounded-xl border border-neutral-700 hover:border-red-500/40 transition-all flex flex-col">
+              <div className="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center mb-4">
+                <Activity className="h-6 w-6 text-red-400" />
               </div>
               <h3 className="font-bold text-white text-lg mb-2">Audit de stabilité électrique &amp; matériel</h3>
-              <p className="text-slate-400 text-sm mb-4 leading-relaxed">
+              <p className="text-neutral-400 text-sm mb-4 leading-relaxed">
                 Nos protocoles industriels identifient les composants en fin de vie avant qu'ils ne
                 provoquent une panne catastrophique — et la facture de remplacement qui va avec.
               </p>
@@ -335,8 +335,8 @@ export function Services() {
                   { tool: "Prime95", desc: "Validation de la stabilité CPU + alimentation sous charge max" },
                   { tool: "FurMark", desc: "Burn-in GPU — anticiper les défaillances graphiques" },
                 ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-slate-300">
-                    <span className="font-mono text-xs text-emerald-400 bg-emerald-500/10 px-1.5 py-0.5 rounded flex-shrink-0 mt-0.5">
+                  <li key={i} className="flex items-start gap-2 text-sm text-neutral-300">
+                    <span className="font-mono text-xs text-red-400 bg-red-500/10 px-1.5 py-0.5 rounded flex-shrink-0 mt-0.5">
                       {item.tool}
                     </span>
                     <span>{item.desc}</span>
@@ -358,14 +358,14 @@ export function Services() {
       </section>
 
       {/* Additional Services */}
-      <section className="py-20 bg-slate-900">
+      <section className="py-20 bg-neutral-900">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge className="mb-4">Interventions Ponctuelles</Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
               Des prestations à la demande
             </h2>
-            <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+            <p className="text-xl text-neutral-400 max-w-2xl mx-auto">
               Pas besoin de contrat à long terme — ISN Group intervient aussi ponctuellement
               selon vos besoins.
             </p>
@@ -375,10 +375,10 @@ export function Services() {
             {additionalServices.map((service, index) => {
               const Icon = service.icon;
               return (
-                <Card key={index} className="hover:border-emerald-500/40 transition-all">
+                <Card key={index} className="hover:border-red-500/40 transition-all">
                   <CardHeader>
-                    <div className="w-12 h-12 bg-emerald-500/10 rounded-lg flex items-center justify-center mb-4">
-                      <Icon className="h-6 w-6 text-emerald-400" />
+                    <div className="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center mb-4">
+                      <Icon className="h-6 w-6 text-red-400" />
                     </div>
                     <CardTitle className="text-lg">{service.title}</CardTitle>
                     <CardDescription>{service.description}</CardDescription>
@@ -391,17 +391,17 @@ export function Services() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-emerald-600 text-white">
+      <section className="py-20 bg-red-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Votre besoin ne rentre pas dans une case ?
           </h2>
-          <p className="text-xl text-emerald-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-red-100 mb-8 max-w-2xl mx-auto">
             Chaque situation est différente. Décrivez-moi votre projet ou votre problème —
             je vous reviens rapidement avec une réponse concrète.
           </p>
           <Link to="/contact">
-            <Button size="lg" className="bg-slate-950 text-emerald-400 hover:bg-slate-900">
+            <Button size="lg" className="bg-neutral-950 text-red-400 hover:bg-neutral-900">
               Demander un devis personnalisé
             </Button>
           </Link>

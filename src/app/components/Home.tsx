@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+﻿import { Helmet } from "react-helmet-async";
 import { Link } from "react-router";
 import { Button } from "./ui/button";
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
@@ -71,7 +71,7 @@ export function Home() {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-950 via-slate-900 to-emerald-950 text-white">
+      <section className="relative bg-gradient-to-br from-neutral-950 via-neutral-900 to-red-950 text-white">
         <div className="absolute inset-0 overflow-hidden">
           <ImageWithFallback
             src="/Serveur-informatique-1.png"
@@ -79,29 +79,29 @@ export function Home() {
             className="w-full h-full object-cover"
             fetchPriority="high"
           />
-          <div className="absolute inset-0 bg-slate-950/50" />
+          <div className="absolute inset-0 bg-neutral-950/50" />
         </div>
 
         <div className="container mx-auto px-4 py-20 md:py-32 relative">
           <div className="max-w-3xl">
-            <Badge className="mb-4 bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+            <Badge className="mb-4 bg-red-500/20 text-red-400 border border-red-500/30">
               Support Informatique & Conception Web
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
               Un technicien de terrain à votre service
             </h1>
-            <p className="text-xl mb-8 text-slate-300">
+            <p className="text-xl mb-8 text-neutral-300">
               ISN Group vous accompagne au quotidien : dépannage, maintenance, gestion de parc
               informatique et création de sites web professionnels — avec fiabilité et transparence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/contact">
-                <Button size="lg" className="bg-emerald-500 text-slate-950 hover:bg-emerald-400 font-semibold">
+                <Button size="lg" className="bg-red-500 text-neutral-950 hover:bg-red-400 font-semibold">
                   Demander un devis gratuit
                 </Button>
               </Link>
               <Link to="/services">
-                <Button size="lg" variant="outline" className="border-emerald-500/50 text-emerald-400 hover:bg-emerald-500/10">
+                <Button size="lg" variant="outline" className="border-red-500/50 text-red-400 hover:bg-red-500/10">
                   Découvrir nos services
                 </Button>
               </Link>
@@ -111,14 +111,14 @@ export function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 bg-slate-950">
+      <section className="py-20 bg-neutral-950">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge className="mb-4">Nos Services</Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
               Deux pôles d'expertise complémentaires
             </h2>
-            <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+            <p className="text-xl text-neutral-400 max-w-2xl mx-auto">
               Du support informatique de terrain à la création web sur mesure — ISN Group couvre
               l'essentiel de vos besoins numériques.
             </p>
@@ -128,10 +128,10 @@ export function Home() {
             {services.map((service, index) => {
               const Icon = service.icon;
               return (
-                <Card key={index} className="hover:border-emerald-500/40 transition-all hover:shadow-emerald-500/5 hover:shadow-lg">
+                <Card key={index} className="hover:border-red-500/40 transition-all hover:shadow-red-500/5 hover:shadow-lg">
                   <CardHeader>
-                    <div className="w-12 h-12 bg-emerald-500/10 rounded-lg flex items-center justify-center mb-4">
-                      <Icon className="h-6 w-6 text-emerald-400" />
+                    <div className="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center mb-4">
+                      <Icon className="h-6 w-6 text-red-400" />
                     </div>
                     <CardTitle>{service.title}</CardTitle>
                     <CardDescription>{service.description}</CardDescription>
@@ -150,7 +150,7 @@ export function Home() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 bg-slate-900">
+      <section className="py-20 bg-neutral-900">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -158,7 +158,7 @@ export function Home() {
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
                 Un partenaire fiable, proche et transparent
               </h2>
-              <p className="text-slate-400 mb-8">
+              <p className="text-neutral-400 mb-8">
                 ISN Group, c'est un technicien informatique passionné avec une solide expérience de
                 terrain. Pas de promesses creuses, pas de jargon inutile — seulement des solutions
                 concrètes et un suivi honnête.
@@ -169,12 +169,12 @@ export function Home() {
                   const Icon = benefit.icon;
                   return (
                     <div key={index} className="flex gap-4">
-                      <div className="w-12 h-12 bg-emerald-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Icon className="h-6 w-6 text-emerald-400" />
+                      <div className="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Icon className="h-6 w-6 text-red-400" />
                       </div>
                       <div>
                         <h3 className="font-semibold mb-2 text-white">{benefit.title}</h3>
-                        <p className="text-slate-400">{benefit.description}</p>
+                        <p className="text-neutral-400">{benefit.description}</p>
                       </div>
                     </div>
                   );
@@ -201,7 +201,7 @@ export function Home() {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-slate-950">
+      <section className="py-20 bg-neutral-950">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge className="mb-4">Notre Approche</Badge>
@@ -218,9 +218,9 @@ export function Home() {
               { step: "04", title: "Suivi", description: "Vérification du résultat et accompagnement dans la durée" },
             ].map((item, index) => (
               <div key={index} className="text-center">
-                <div className="text-5xl font-bold text-emerald-500/20 mb-4">{item.step}</div>
+                <div className="text-5xl font-bold text-red-500/20 mb-4">{item.step}</div>
                 <h3 className="font-semibold text-xl mb-2 text-white">{item.title}</h3>
-                <p className="text-slate-400">{item.description}</p>
+                <p className="text-neutral-400">{item.description}</p>
               </div>
             ))}
           </div>
@@ -228,22 +228,22 @@ export function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-emerald-600 text-white">
+      <section className="py-20 bg-red-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Un problème informatique ? Un projet web ?
           </h2>
-          <p className="text-xl text-emerald-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-red-100 mb-8 max-w-2xl mx-auto">
             Contactez ISN Group pour un devis gratuit et sans engagement. Réponse rapide garantie.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">
-              <Button size="lg" className="bg-slate-950 text-emerald-400 hover:bg-slate-900">
+              <Button size="lg" className="bg-neutral-950 text-red-400 hover:bg-neutral-900">
                 Demander un devis gratuit
               </Button>
             </Link>
             <a href="tel:+33767804247">
-              <Button size="lg" variant="outline" className="border-emerald-200/50 text-white hover:bg-emerald-700">
+              <Button size="lg" variant="outline" className="border-red-200/50 text-white hover:bg-red-700">
                 Appelez-nous directement
               </Button>
             </a>

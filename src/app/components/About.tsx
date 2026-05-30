@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+﻿import { Helmet } from "react-helmet-async";
 import { Link } from "react-router";
 import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
@@ -53,16 +53,16 @@ export function About() {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-slate-950 via-slate-900 to-emerald-950 text-white py-20">
+      <section className="bg-gradient-to-br from-neutral-950 via-neutral-900 to-red-950 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
-            <Badge className="mb-4 bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+            <Badge className="mb-4 bg-red-500/20 text-red-400 border border-red-500/30">
               À propos d'ISN Group
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Un technicien passionné, à votre service
             </h1>
-            <p className="text-xl text-slate-300">
+            <p className="text-xl text-neutral-300">
               ISN Group, c'est avant tout une expertise terrain honnête, au service de vos
               besoins informatiques réels.
             </p>
@@ -71,7 +71,7 @@ export function About() {
       </section>
 
       {/* Mission Section */}
-      <section className="py-20 bg-slate-900">
+      <section className="py-20 bg-neutral-900">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -79,7 +79,7 @@ export function About() {
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
                 De la technique au service de vos projets
               </h2>
-              <div className="space-y-4 text-slate-300">
+              <div className="space-y-4 text-neutral-300">
                 <p>
                   ISN Group est fondé sur une conviction simple : l'informatique doit rester
                   accessible, compréhensible et fiable. Que vous soyez un professionnel en quête
@@ -111,7 +111,7 @@ export function About() {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 bg-slate-950">
+      <section className="py-20 bg-neutral-950">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge className="mb-4">Nos Valeurs</Badge>
@@ -124,13 +124,13 @@ export function About() {
             {values.map((value, index) => {
               const Icon = value.icon;
               return (
-                <Card key={index} className="text-center hover:border-emerald-500/40 transition-all">
+                <Card key={index} className="text-center hover:border-red-500/40 transition-all">
                   <CardContent className="pt-6">
-                    <div className="w-16 h-16 bg-emerald-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Icon className="h-8 w-8 text-emerald-400" />
+                    <div className="w-16 h-16 bg-red-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Icon className="h-8 w-8 text-red-400" />
                     </div>
                     <h3 className="font-bold text-xl mb-2 text-white">{value.title}</h3>
-                    <p className="text-slate-400">{value.description}</p>
+                    <p className="text-neutral-400">{value.description}</p>
                   </CardContent>
                 </Card>
               );
@@ -140,14 +140,14 @@ export function About() {
       </section>
 
       {/* Methodology Section */}
-      <section className="py-20 bg-slate-900">
+      <section className="py-20 bg-neutral-900">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge className="mb-4">Méthodologie</Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
               Une approche Agile, Itérative et Incrémentale
             </h2>
-            <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+            <p className="text-xl text-neutral-400 max-w-2xl mx-auto">
               Chaque intervention suit une méthode éprouvée : avancer par cycles courts,
               ajuster en continu, et apporter de la valeur concrète à chaque étape.
             </p>
@@ -182,12 +182,12 @@ export function About() {
             ].map((item, index) => (
               <div
                 key={index}
-                className="bg-slate-800/50 rounded-xl p-8 border border-slate-700 hover:border-emerald-500/40 transition-all"
+                className="bg-neutral-800/50 rounded-xl p-8 border border-neutral-700 hover:border-red-500/40 transition-all"
               >
-                <div className="text-5xl font-bold text-emerald-500/20 mb-4">{item.number}</div>
+                <div className="text-5xl font-bold text-red-500/20 mb-4">{item.number}</div>
                 <h3 className="text-2xl font-bold text-white mb-4">{item.pillar}</h3>
-                <p className="text-slate-300 mb-4">{item.description}</p>
-                <p className="text-slate-500 text-sm border-t border-slate-700 pt-4">{item.detail}</p>
+                <p className="text-neutral-300 mb-4">{item.description}</p>
+                <p className="text-neutral-500 text-sm border-t border-neutral-700 pt-4">{item.detail}</p>
               </div>
             ))}
           </div>
@@ -195,7 +195,7 @@ export function About() {
       </section>
 
       {/* Expertise Section */}
-      <section className="py-20 bg-slate-950">
+      <section className="py-20 bg-neutral-950">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative order-2 md:order-1">
@@ -212,7 +212,7 @@ export function About() {
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
                 Ce que vous pouvez attendre d'ISN Group
               </h2>
-              <p className="text-slate-400 mb-6">
+              <p className="text-neutral-400 mb-6">
                 Chaque prestation repose sur les mêmes principes : écoute du besoin réel,
                 diagnostic honnête, intervention efficace et suivi après livraison.
               </p>
@@ -220,8 +220,8 @@ export function About() {
               <div className="grid grid-cols-1 gap-3 mb-8">
                 {engagements.map((item, index) => (
                   <div key={index} className="flex items-start gap-2">
-                    <CheckCircle className="h-5 w-5 text-emerald-400 flex-shrink-0 mt-0.5" />
-                    <span className="text-slate-300">{item}</span>
+                    <CheckCircle className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
+                    <span className="text-neutral-300">{item}</span>
                   </div>
                 ))}
               </div>
@@ -231,23 +231,23 @@ export function About() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-emerald-600 text-white">
+      <section className="py-20 bg-red-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Parlons de votre projet
           </h2>
-          <p className="text-xl text-emerald-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-red-100 mb-8 max-w-2xl mx-auto">
             Que ce soit pour un dépannage urgent, une gestion de parc ou un site web,
             contactez ISN Group pour un premier échange sans engagement.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">
-              <Button size="lg" className="bg-slate-950 text-emerald-400 hover:bg-slate-900">
+              <Button size="lg" className="bg-neutral-950 text-red-400 hover:bg-neutral-900">
                 Prendre contact
               </Button>
             </Link>
             <Link to="/services">
-              <Button size="lg" variant="outline" className="border-emerald-200/50 text-white hover:bg-emerald-700">
+              <Button size="lg" variant="outline" className="border-red-200/50 text-white hover:bg-red-700">
                 Voir nos services
               </Button>
             </Link>
